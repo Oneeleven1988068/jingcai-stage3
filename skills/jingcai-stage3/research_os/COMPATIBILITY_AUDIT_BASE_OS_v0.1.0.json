@@ -1,0 +1,24 @@
+{
+  "research_os_version": "0.1.0-alpha",
+  "db": "stage3_compatibility_test.db",
+  "tables": {
+    "research_evidence": 0,
+    "research_experiment": 0,
+    "research_experiment_event": 0,
+    "research_failure": 0,
+    "research_meta": 5,
+    "research_metric_snapshot": 0,
+    "research_outcome_event": 0,
+    "research_prediction_freeze": 0,
+    "research_promotion_event": 0,
+    "research_provenance_edge": 0
+  },
+  "prediction_integrity": {
+    "total": 0,
+    "unverified_or_incomplete": 0,
+    "post_kickoff": 0
+  },
+  "evidence_states": {},
+  "production_boundary": "Jingcai 3.4 remains staking baseline; Research OS install grants no 3.5 promotion",
+  "audit_status": "PASS"
+}

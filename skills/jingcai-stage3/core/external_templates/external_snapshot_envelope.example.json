@@ -1,0 +1,40 @@
+{
+  "provider": "the_odds_api",
+  "fetched_at_utc": "2026-08-17T02:00:00Z",
+  "data": [
+    {
+      "id": "provider-event-id",
+      "sport_key": "soccer_example",
+      "sport_title": "Example League",
+      "commence_time": "2026-08-17T03:00:00Z",
+      "home_team": "Home Team",
+      "away_team": "Away Team",
+      "bookmakers": [
+        {
+          "key": "book_a",
+          "title": "Book A",
+          "last_update": "2026-08-17T01:59:00Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Home Team",
+                  "price": 2.1
+                },
+                {
+                  "name": "Draw",
+                  "price": 3.3
+                },
+                {
+                  "name": "Away Team",
+                  "price": 3.6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP-008-CRS-TWO-SIDED-PRESENTATION",
+  "status": "SHADOW",
+  "hypothesis": "A CRS presentation that always exposes center, left tail, right tail, and coverage mass will reduce information loss caused by Top-N-only presentation without changing the underlying probability model.",
+  "falsification_contract": {
+    "reject_or_rework_if": [
+      "The presentation silently drops TTG 0-1 or 4+ probability mass metadata.",
+      "The displayed exact-score subset is mislabeled as the complete CRS distribution.",
+      "OTHER_H/D/A buckets are assigned fabricated totals or margins.",
+      "The presentation causes automatic production/staking promotion without separate OOS evidence."
+    ],
+    "promotion_requirement": "No model promotion. Any decision-value claim requires preregistered OOS evaluation."
+  },
+  "production_change": false,
+  "staking_change": false
+}

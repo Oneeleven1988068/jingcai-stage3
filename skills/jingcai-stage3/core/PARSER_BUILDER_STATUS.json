@@ -1,0 +1,13 @@
+{
+  "component": "Jingcai Stage3 Parser / Builder",
+  "version": "1.0.0",
+  "initial_build": "PASS",
+  "collector_bridge": true,
+  "preserve_missing_had_matches": true,
+  "canonical_join_key": "official numeric matchId",
+  "result_half_full_parse": true,
+  "anchor_candidates": [1440, 360, 60, 15],
+  "close_buffer_minutes": 2,
+  "staking_baseline": "Jingcai 3.4",
+  "3_5_promotion": "NOT_GRANTED"
+}

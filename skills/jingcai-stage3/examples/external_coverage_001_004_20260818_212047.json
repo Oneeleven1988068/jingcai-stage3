@@ -1,0 +1,41 @@
+{
+  "target_count": 4,
+  "external_event_count_seen": 68,
+  "targets": [
+    {
+      "id": "周二001",
+      "home": "Independiente Rivadavia",
+      "away": "Fluminense",
+      "status": "MISSING",
+      "external_event_id": null,
+      "commence_time": null
+    },
+    {
+      "id": "周二002",
+      "home": "Levski Sofia",
+      "away": "AEK Athens",
+      "status": "MISSING",
+      "external_event_id": null,
+      "commence_time": null
+    },
+    {
+      "id": "周二003",
+      "home": "Dinamo Zagreb",
+      "away": "Viking",
+      "status": "MISSING",
+      "external_event_id": null,
+      "commence_time": null
+    },
+    {
+      "id": "周二004",
+      "home": "Fenerbahce",
+      "away": "Lyon",
+      "status": "MISSING",
+      "external_event_id": null,
+      "commence_time": null
+    }
+  ],
+  "matched_count": 0,
+  "missing_or_ambiguous_count": 4,
+  "EXTERNAL_COVERAGE_GATE": "FAIL"
+}

@@ -1,0 +1,8 @@
+{
+  "version": "0.1.1-alpha",
+  "self_check": "PASS",
+  "production_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "model_promotion": "NOT_GRANTED",
+  "registered_shadow_experiments": 4
+}

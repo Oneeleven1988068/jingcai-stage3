@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-002-TTG-TAIL-MASS",
+  "status": "REGISTERED_SHADOW",
+  "module": "TTG Tail-Mass Diagnostic",
+  "hypothesis": "Reporting TTG mode together with high-goal tail mass (4+ and 5+) prevents information loss from a single modal goal count and improves risk communication/CRS coverage.",
+  "baseline": "Current TTG shortlist output",
+  "001_observation": "Mode was 3 goals, while de-juiced 4+ mass was about 40.8% and 5+ mass about 22.4%; actual total was 5. This observation motivates testing but does not prove edge.",
+  "primary_metrics": ["TTG_RPS", "TTG_logloss", "4plus_calibration", "5plus_calibration", "CRS_topk_coverage"],
+  "falsification_contract": [
+    "Reject if tail-mass reporting does not improve calibration/risk discrimination OOS",
+    "Reject if added complexity gives no actionable separation",
+    "Do not tune thresholds to match match 001"
+  ],
+  "production_weight": 0
+}

@@ -1,0 +1,48 @@
+{
+  "experiment_id": "EXP-009-HYBRID-CRS-SATELLITE",
+  "status": "SHADOW",
+  "question": "Does adding one pre-match-frozen CRS opportunity satellite to two pre-existing A1/A2 direction anchors, with pair-plus-triple coverage, improve cost-matched portfolio outcomes without forcing weak anchors or hiding true ticket expansion?",
+  "hypothesis": "A separately gated CRS satellite can add payout convexity while the anchor-anchor pair preserves some portfolio survival when the exact score misses.",
+  "comparison_arms": [
+    "A: anchor_1 x anchor_2 only",
+    "B: standalone CRS satellite plus anchor_1 x anchor_2",
+    "C: pure satellite x anchor_1 x anchor_2 triple",
+    "D: HYBRID_CRS_SATELLITE pair-plus-triple cover"
+  ],
+  "mandatory_freeze_fields": [
+    "match ids",
+    "CRS exact-score selection set",
+    "CRS odds",
+    "CRS_SINGLE_OPPORTUNITY state",
+    "price_value_state",
+    "anchor ratings and selections",
+    "Sporttery sales state",
+    "mixed-pool compatibility evidence",
+    "prediction freeze timestamp",
+    "primitive bet count and total cost"
+  ],
+  "primary_metrics": [
+    "cost-matched ROI",
+    "max drawdown",
+    "positive-return frequency",
+    "payout concentration",
+    "tail-hit contribution",
+    "S/A1/A2 high-confidence error rate"
+  ],
+  "falsification_contract": {
+    "reject_or_keep_shadow_if": [
+      "Any benefit disappears after exact primitive-bet cost matching.",
+      "Performance is dominated by one or two rare CRS hits with unstable payout concentration.",
+      "The template causes B/C matches to be promoted merely to fill anchor slots.",
+      "Score selections are chosen or changed after observing the result.",
+      "Mixed-pool compatibility is assumed rather than observed.",
+      "Nominal 3x4 labels understate true cost when legs contain multiple selections.",
+      "ROI improvement comes with materially worse drawdown without a preregistered acceptable tradeoff.",
+      "The effect is confined to one league or short time window and fails walk-forward stability."
+    ]
+  },
+  "production_change": false,
+  "staking_change": false,
+  "thresholds_frozen": false,
+  "promotion": "NOT_GRANTED"
+}

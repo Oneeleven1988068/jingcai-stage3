@@ -1,0 +1,14 @@
+{
+  "match_ref": "周一001_20260817",
+  "severity": "MAJOR",
+  "failure_type": "HIGH_CONFIDENCE_WRONG_DIRECTION",
+  "input_truth_check": "PENDING",
+  "time_leakage_check": "PENDING",
+  "promotion_layer": "PENDING",
+  "missed_gate": "PENDING",
+  "root_cause_class": "UNCLASSIFIED",
+  "historical_recurrence": "UNKNOWN",
+  "candidate_prevention_rule": "NONE_UNTIL_OOS_SUPPORTED",
+  "oos_generalization_required": true,
+  "note": "Every failure leaves an auditable corpse; no post-hoc story is accepted as an upgrade."
+}

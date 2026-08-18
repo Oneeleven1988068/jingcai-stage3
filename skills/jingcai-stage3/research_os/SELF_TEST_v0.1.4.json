@@ -1,0 +1,8 @@
+{
+  "self_test": "PASS",
+  "version": "CRS Two-Sided Distribution Presentation Shadow v0.1",
+  "center_plus_two_sided_tails": true,
+  "coverage_audit": true,
+  "no_naive_cross_market_multiplication": true,
+  "production_promotion": false
+}

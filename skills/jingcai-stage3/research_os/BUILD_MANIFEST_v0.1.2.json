@@ -1,0 +1,222 @@
+{
+  "package": "Jingcai Reality-First Research OS v0.1.2-alpha — Full Distribution / Tail-Aware CRS Patch",
+  "build_date": "2026-08-18",
+  "governance_state": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "production_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "shadow_only": true,
+  "self_test": {
+    "self_test": "PASS",
+    "version": "Full Distribution / Tail-Aware CRS Shadow v0.2",
+    "no_early_truncation": true,
+    "symmetric_plus_minus_one": true,
+    "crs_full_state": true,
+    "production_promotion": false
+  },
+  "historical_falsification_summary": {
+    "n": 10,
+    "old_ttg_top3_hit_rate": 0.6,
+    "old_crs_top3_hit_rate": 0.1,
+    "actual_5plus_n": 3,
+    "old_ttg_top3_hit_rate_on_5plus": 0.0,
+    "avg_lambda_diagnostic_mass_omitted_by_old_ttg_top3": 0.37150988638753,
+    "lambda_tail_5plus_auc": 0.47619047619047616,
+    "lambda_tail_5plus_brier": 0.2347480338245184,
+    "lambda_tail_5plus_logloss": 0.6932018294490474,
+    "climatology_brier": 0.20999999999999996,
+    "climatology_logloss": 0.6108643020548936
+  },
+  "file_count_excluding_manifest": 38,
+  "files": [
+    {
+      "path": "COMPATIBILITY_AUDIT_BASE_OS_v0.1.0.json",
+      "sha256": "0ac6279a13672fe71266ab03d2fd11f160cdc60ee1c5551453dd57d9afcdceef",
+      "bytes": 688
+    },
+    {
+      "path": "PATCH_NOTES_v0.1.1.md",
+      "sha256": "7bda96333f64c3f63f9b470bbdc137c69961296b3faabbac3961ca53da90a230",
+      "bytes": 1131
+    },
+    {
+      "path": "PATCH_NOTES_v0.1.2.md",
+      "sha256": "f1002cd6df7143be969204cf726edc0156282b5e3d54b3f6bc83d5becafb3fb3",
+      "bytes": 1567
+    },
+    {
+      "path": "README.md",
+      "sha256": "b9eac464e85d30ca0f04af5c62bb92765bea26743879be6280fa276131563f67",
+      "bytes": 5363
+    },
+    {
+      "path": "README_v0.1.0_legacy.md",
+      "sha256": "f798db41ae28241bc2f4ac7105d245f18842acef7f010337c7fc99606d0e5f94",
+      "bytes": 6157
+    },
+    {
+      "path": "README_v0.1.2.md",
+      "sha256": "b9eac464e85d30ca0f04af5c62bb92765bea26743879be6280fa276131563f67",
+      "bytes": 5363
+    },
+    {
+      "path": "SELF_TEST_BASE_OS_v0.1.0.json",
+      "sha256": "d6da9533bb0fcbe397388570ff4b688002c3e140f09b10ac6005b903a0cd3e87",
+      "bytes": 1114
+    },
+    {
+      "path": "SELF_TEST_v0.1.2.json",
+      "sha256": "025dcf9fdc8a8398684d4c1cb5122680aa08a0844a7360ddcfdb71bfe1140489",
+      "bytes": 215
+    },
+    {
+      "path": "STATUS.json",
+      "sha256": "afc8d7fec0e0880142031a2cf1e6065898cc6a5edb6d2fe55320e7eccc228118",
+      "bytes": 1678
+    },
+    {
+      "path": "STATUS_PATCH.json",
+      "sha256": "2bd09c2d9cff906d4ddc279344de2d4f6445b3879b563319463f6110192a7722",
+      "bytes": 360
+    },
+    {
+      "path": "STATUS_v0.1.0_legacy.json",
+      "sha256": "bebf0571263f1e263209a615e5328fc573b187a8bd75dac17086ac6dd79324a8",
+      "bytes": 868
+    },
+    {
+      "path": "STATUS_v0.1.1_legacy.json",
+      "sha256": "2cc2aaaa3fc0d286fad6efb3a3c4d7aedbca7406b6c51ab1de6d5739955e4ac5",
+      "bytes": 214
+    },
+    {
+      "path": "STATUS_v0.1.2.json",
+      "sha256": "afc8d7fec0e0880142031a2cf1e6065898cc6a5edb6d2fe55320e7eccc228118",
+      "bytes": 1678
+    },
+    {
+      "path": "__pycache__/jingcai_research_os_v0_1.cpython-313.pyc",
+      "sha256": "480d1da10df67b07f32955fb1a0850852c373e8a907bc2e5b5da9a26f378d7f9",
+      "bytes": 32073
+    },
+    {
+      "path": "backtests/frozen_20260816_1705_summary.csv",
+      "sha256": "70129ed007a42f2fc377ae8b28ab6fd1e57092af432d0dc0f916c72c3612dc5f",
+      "bytes": 915
+    },
+    {
+      "path": "backtests/frozen_20260816_1705_tail_falsification.json",
+      "sha256": "e76d456c50721f879e8626f26030fc6cdf12b3f88413b65015a6b4897c842510",
+      "bytes": 6962
+    },
+    {
+      "path": "examples/evidence.example.json",
+      "sha256": "04161b49cbb6c88048ddd20048e53367f076811a0765b71d16eb48e163c80d4f",
+      "bytes": 426
+    },
+    {
+      "path": "examples/experiment.example.json",
+      "sha256": "1248cef9d2d89c5370a585a78116472434c921d9921c70356bade9696f79db34",
+      "bytes": 1282
+    },
+    {
+      "path": "examples/failure.example.json",
+      "sha256": "ab3dc5bdf46b2925226582622c17ad49a9192be996dd48eef26d8ebe514cc0f9",
+      "bytes": 519
+    },
+    {
+      "path": "examples/outcome.example.json",
+      "sha256": "f5e712ea106318f4141c79420fc9df4689fac0360019a3b47972aec5c6f90262",
+      "bytes": 168
+    },
+    {
+      "path": "examples/prediction_freeze.example.json",
+      "sha256": "09812649c086723731723d84a8f5469cf17cbf890e598ba3e6edd6d10b3b5a39",
+      "bytes": 641
+    },
+    {
+      "path": "experiments/EXP-001-hhad-margin-decomposition.json",
+      "sha256": "6592168a848c07fc743cc00985642d99805f2c6b1fd88f3c253fa09948c0ee2d",
+      "bytes": 682
+    },
+    {
+      "path": "experiments/EXP-002-ttg-tail-mass.json",
+      "sha256": "3e5259e71c4d6a012085e9ee8f6ae74cb100eb9598a545fc0f63163750c4ab47",
+      "bytes": 916
+    },
+    {
+      "path": "experiments/EXP-003-reversal-persistence.json",
+      "sha256": "85b8d5c44587eaf55cd8d56da71a2bb471ecebde75af1af31e6b331212a60b5f",
+      "bytes": 1210
+    },
+    {
+      "path": "experiments/EXP-004-market-time-alignment.json",
+      "sha256": "6390cd4046dbc5011d55c2354664475784e0e5c1b7c632b3fe0e50da869ecd63",
+      "bytes": 854
+    },
+    {
+      "path": "experiments/EXP-005-full-distribution-preservation.json",
+      "sha256": "d4e7fb90ebf5f41a8592477b6676d03f99e1d365f99e422e1475a7b067be1b93",
+      "bytes": 663
+    },
+    {
+      "path": "experiments/EXP-006-tail-aware-crs-state-space.json",
+      "sha256": "e28ccbb5ff49a591f94e4434caf60a927b930dabc9d68e0813de040f157ee72f",
+      "bytes": 711
+    },
+    {
+      "path": "jingcai_research_os_v0_1.py",
+      "sha256": "28284713b61a6432ccb118ff4f6d4ceeefc717cd9def7c60a0c81c0fe42cab1e",
+      "bytes": 20626
+    },
+    {
+      "path": "research_os_policy.json",
+      "sha256": "cef0037e1cff37b2b60d096a4d38a4f8c9f9f1465c8664e0e2eaa875e2d7f287",
+      "bytes": 3167
+    },
+    {
+      "path": "research_os_schema.sql",
+      "sha256": "d4791f383f6e27e509b586673e974949cd04bab2855b61d6c7435450879cce27",
+      "bytes": 7836
+    },
+    {
+      "path": "reviews/IN_MATCH_SHOCK_ATTRIBUTION_POLICY.md",
+      "sha256": "50b24ecf070c7bb702f4b1e021fe7fa1fb9360847fa392f5c7846b4a08fa56a7",
+      "bytes": 568
+    },
+    {
+      "path": "reviews/MATCH-001-full-distribution-output.json",
+      "sha256": "36b23eb544cca32798bae6d42bb768da95ae4ba4c60a2c42c0693a6da6d3785f",
+      "bytes": 17516
+    },
+    {
+      "path": "reviews/MATCH-001-review-2026-08-18.json",
+      "sha256": "9511c027e6da859750083fd71cca1fd262cd84d49ff7ea35c73da22381a1d77d",
+      "bytes": 1442
+    },
+    {
+      "path": "reviews/MATCH-001-shadow-output.json",
+      "sha256": "5845002da0c1c833f9571ccf735d4d260b252ffa428500100f3053ca16a5ff8d",
+      "bytes": 2669
+    },
+    {
+      "path": "shadow_modules/__pycache__/full_distribution_tail_aware_shadow_v0_2.cpython-313.pyc",
+      "sha256": "3fb9459b599c399a63230b5b850d1023e534a813a4252c1faaa8980760d87b2f",
+      "bytes": 26306
+    },
+    {
+      "path": "shadow_modules/__pycache__/market_structure_shadow_v0_1.cpython-313.pyc",
+      "sha256": "dc11424830982f0ff1d7125f34d5508b279beca0728049842a836e1caf4179c0",
+      "bytes": 9189
+    },
+    {
+      "path": "shadow_modules/full_distribution_tail_aware_shadow_v0_2.py",
+      "sha256": "344e4e3cd9d1003157f07b433b165f328d15f9c40084899f2e7a31bc925ee00e",
+      "bytes": 12945
+    },
+    {
+      "path": "shadow_modules/market_structure_shadow_v0_1.py",
+      "sha256": "613c24acbe7acf6de866b40432c6f526fb08d6733437a20de4a7f5f2504e99b8",
+      "bytes": 5495
+    }
+  ]
+}

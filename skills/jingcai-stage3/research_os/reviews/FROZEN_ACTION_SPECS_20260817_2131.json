@@ -1,0 +1,45 @@
+[
+  {
+    "match_num": "周一001",
+    "rating": "B",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": [], "label": "skip", "action_type": "NO_BET"}
+  },
+  {
+    "match_num": "周一002",
+    "rating": "A1",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": ["H"], "label": "home win", "action_type": "BET"}
+  },
+  {
+    "match_num": "周一003",
+    "rating": "B",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": [], "label": "skip / draw risk", "action_type": "NO_BET"}
+  },
+  {
+    "match_num": "周一004",
+    "rating": "A2",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": ["H", "D"], "label": "home/draw", "action_type": "BET"}
+  },
+  {
+    "match_num": "周一005",
+    "rating": "B_PRODUCTION__A2_SHADOW",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": [], "label": "production skip; HAD missing", "action_type": "NO_BET"}
+  },
+  {
+    "match_num": "周一006",
+    "rating": "A2",
+    "evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+    "production_action": {"market": "HAD", "selections": ["H"], "label": "home win, non-banker", "action_type": "BET"},
+    "protection_action": {
+      "market": "HHAD",
+      "line": "-1",
+      "selections": ["H", "D"],
+      "claimed_intent": "PROTECT_HAD_DRAW",
+      "note": "Retrospective semantic audit of the previously described '让胜/让平保护' wording."
+    }
+  }
+]

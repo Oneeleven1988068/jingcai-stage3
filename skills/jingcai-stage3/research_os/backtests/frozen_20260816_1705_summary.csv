@@ -1,0 +1,11 @@
+match,lambda_home,lambda_away,old_ttg_top3,old_crs_top3,result,source_note
+周日001,1.067,1.103,2/3/1,1:1/0:1/1:0,0:0,17:05 frozen workbook + official result
+周日002,1.250,1.429,3/2/4,1:1/1:2/2:1,1:4,17:05 frozen workbook + official result
+周日003,0.885,1.667,2/3/1,0:1/1:2/1:1,3:2,17:05 frozen workbook + official result
+周日004,1.301,1.056,2/3/1,1:1/1:0/2:1,1:1,17:05 frozen workbook + official result
+周日005,2.000,1.188,3/2/4,2:1/1:1/2:0,3:1,17:05 frozen workbook + official result
+周日006,1.182,1.444,2/3/1,1:1/1:2/0:1,3:0,17:05 frozen workbook + official result
+周日007,2.256,1.048,3/2/4,2:1/2:0/3:1,1:3,17:05 frozen workbook + official result
+周日008,2.800,0.875,3/4/2,2:0/2:1/3:0,3:1,17:05 frozen workbook + official result
+周日009,2.545,1.120,3/4/2,2:1/2:0/3:1,2:2,17:05 frozen workbook + official result
+周日010,1.750,1.867,3/4/2,1:2/2:1/1:1,5:5,17:05 frozen workbook + official result

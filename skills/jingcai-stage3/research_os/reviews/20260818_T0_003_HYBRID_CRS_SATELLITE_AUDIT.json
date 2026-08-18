@@ -1,0 +1,74 @@
+{
+  "module": "Hybrid CRS Satellite Bet Construction Shadow v0.1",
+  "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "portfolio_class": "HYBRID_CRS_SATELLITE",
+  "construction_state": "CONSTRUCTION_INCOMPLETE_OR_BLOCKED",
+  "principle": "ONE_CRS_OPPORTUNITY_SATELLITE_PLUS_TWO_PREEXISTING_A1_A2_DIRECTION_ANCHORS__PAIR_PLUS_TRIPLE_COVER__NO_FORCED_PROMOTION",
+  "roles": {
+    "satellite": "CRS opportunity / payout convexity leg; not a direction banker",
+    "anchor_1": "pre-existing A1/A2 direction leg",
+    "anchor_2": "pre-existing A1/A2 direction leg"
+  },
+  "input_summary": {
+    "satellite": {
+      "match_num": "周二003",
+      "pool": "CRS",
+      "direction_rating": "A2",
+      "crs_opportunity_state": "TAIL",
+      "price_value_state": "UNVERIFIED",
+      "selections": [
+        "3:1",
+        "3:2",
+        "4:1"
+      ]
+    },
+    "anchor_1": {},
+    "anchor_2": {},
+    "cover_plan": [
+      "SATELLITE_X_ANCHOR_1",
+      "SATELLITE_X_ANCHOR_2",
+      "ANCHOR_1_X_ANCHOR_2",
+      "FULL_TRIPLE"
+    ],
+    "mixed_pool_compatibility": "UNVERIFIED",
+    "sales_state": "UNVERIFIED",
+    "freeze_timestamp": "2026-08-18T11:14:31+08:00"
+  },
+  "ticket_expansion_audit": {
+    "satellite_selection_count": 3,
+    "anchor_1_selection_count": 0,
+    "anchor_2_selection_count": 0,
+    "primitive_bets_by_component": {
+      "SATELLITE_X_ANCHOR_1": 0,
+      "SATELLITE_X_ANCHOR_2": 0,
+      "ANCHOR_1_X_ANCHOR_2": 0,
+      "FULL_TRIPLE": 0
+    },
+    "total_primitive_bet_count": 0,
+    "unit_stake": 2.0,
+    "total_cost_if_unit_stake_supplied": 0.0,
+    "classic_3x4_equivalent": false,
+    "important_note": "If any leg has multiple selections, the true primitive-bet count expands. A nominal pair+triple cover must not be described as only four bets unless each leg has exactly one selection."
+  },
+  "flags": [
+    "EXPANDED_MIXED_COVER__DO_NOT_LABEL_AS_FOUR_BETS"
+  ],
+  "warnings": [
+    "CRS_PRICE_VALUE_UNVERIFIED__HIGH_ODDS_NOT_EQUAL_POSITIVE_EV"
+  ],
+  "blockers": [
+    "MISSING_DIRECTION_ANCHOR_1",
+    "MISSING_DIRECTION_ANCHOR_2",
+    "MIXED_POOL_COMPATIBILITY_UNVERIFIED",
+    "SPORTTERY_SALES_STATE_NOT_OPEN_VERIFIED"
+  ],
+  "governance_controls": {
+    "automatic_rating_promotion": false,
+    "automatic_stake_change": false,
+    "automatic_ticket_submission": false,
+    "production_probability_change": false,
+    "thresholds_frozen": false,
+    "promotion": "NOT_GRANTED"
+  }
+}

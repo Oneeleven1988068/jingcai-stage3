@@ -1,0 +1,12 @@
+{
+  "experiment_id": "EXP-001-HHAD-MARGIN-DECOMPOSITION",
+  "status": "SHADOW",
+  "scope": "Sporttery HAD <-> Sporttery HHAD only",
+  "symmetric_framework": {
+    "home_minus_1": "HAD_H ~ HHAD_H + HHAD_D; within home-win branch: H=win2+, D=win1",
+    "home_plus_1": "HAD_A ~ HHAD_D + HHAD_A; within away-win branch: D=away win1, A=away win2+"
+  },
+  "usage_rule": "Cross-market consistency may always be audited; conditional margin prediction is allowed only after HAD direction gate has established that win branch as actionable.",
+  "warning": "If HAD remains competitive/ambiguous, HHAD decomposition must not manufacture a direction.",
+  "production_promotion": "NOT_GRANTED"
+}

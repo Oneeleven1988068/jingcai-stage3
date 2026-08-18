@@ -1,0 +1,26 @@
+{
+  "review": "2026-08-18 T0 周二003 Hybrid CRS Satellite candidate",
+  "evidence_state": "DERIVED_FROM_FROZEN_T0_CRS_TWO_SIDED_PRESENTATION",
+  "freeze_source_time": "2026-08-18 09:31:55-09:31:56 upstream odds; captured locally 11:14",
+  "satellite": {
+    "match_num": "周二003",
+    "fixture": "萨格勒布迪纳摩 vs 维京",
+    "direction_rating": "A2",
+    "crs_opportunity_state": "TAIL",
+    "price_value_state": "UNVERIFIED",
+    "ttg_4_plus": 0.3648337457326189,
+    "ttg_5_plus": 0.19545398195692357,
+    "candidate_scores": [
+      {"score": "3:1", "odds": 12.0, "crs_dejuiced_cell_mass": 0.06224933104722004},
+      {"score": "3:2", "odds": 22.0, "crs_dejuiced_cell_mass": 0.03395418057121093},
+      {"score": "4:1", "odds": 26.0, "crs_dejuiced_cell_mass": 0.02873046048333233}
+    ]
+  },
+  "anchor_1": null,
+  "anchor_2": null,
+  "construction_state": "INCOMPLETE_MISSING_TWO_PREEXISTING_A1_A2_DIRECTION_ANCHORS",
+  "mixed_pool_compatibility": "UNVERIFIED",
+  "sales_state": "OPEN_AT_CAPTURE_BUT_EXECUTION_NOT_FROZEN",
+  "ticket_generated": false,
+  "important_note": "003 may qualify as a CRS TAIL satellite candidate without being a direction banker. No anchor may be upgraded from B merely to complete the template. High odds do not prove positive EV."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.1.4-alpha",
+  "patch": "CRS_TWO_SIDED_DISTRIBUTION_PRESENTATION",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "staking_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "production_probability_change": false,
+  "staking_change": false,
+  "rating_threshold_change": false,
+  "presentation_change": true,
+  "silent_promotion_forbidden": true
+}

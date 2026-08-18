@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "stage": "Stage3 external market data bridge",
+  "parser": "PASS",
+  "synthetic_no_leakage_test": "PASS",
+  "real_external_snapshots": "pending source/credentials",
+  "external_positive_probability_fusion": "inactive",
+  "risk_gate_thresholds": "candidate only, not frozen"
+}

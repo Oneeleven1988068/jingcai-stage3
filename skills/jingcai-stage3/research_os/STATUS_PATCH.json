@@ -1,0 +1,18 @@
+{
+  "system": "Jingcai Reality-First Research OS",
+  "version": "0.1.5-alpha",
+  "patch": "HYBRID_CRS_SATELLITE_BET_CONSTRUCTION",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "staking_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "inherits": "v0.1.4 CRS Two-Sided Distribution Presentation",
+  "new_shadow_module": "shadow_modules/hybrid_crs_satellite_shadow_v0_1.py",
+  "new_experiment": "EXP-009-HYBRID-CRS-SATELLITE",
+  "production_probability_change": false,
+  "rating_threshold_change": false,
+  "staking_change": false,
+  "bet_construction_shadow_change": true,
+  "thresholds_frozen": false,
+  "silent_promotion_forbidden": true,
+  "self_test": "PASS"
+}

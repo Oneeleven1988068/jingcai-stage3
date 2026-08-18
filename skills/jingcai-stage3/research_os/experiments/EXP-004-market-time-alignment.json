@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-004-MARKET-TIME-ALIGNMENT",
+  "status": "REGISTERED_SHADOW",
+  "module": "Asynchronous Market Time Alignment",
+  "hypothesis": "Explicitly recording source quote timestamps and age deltas reduces false claims of synchronous confirmation and improves the reliability of external-market divergence/reversal gates.",
+  "baseline": "Current snapshot-level comparison",
+  "candidate_features": ["sporttery_quote_age_seconds", "external_quote_age_seconds", "cross_source_time_delta_seconds", "effective_close_confirmation_state"],
+  "primary_metrics": ["false_sync_label_rate", "gate_stability", "high_confidence_error_rate"],
+  "falsification_contract": [
+    "Reject extra gating if timestamp alignment does not change decisions or error rates OOS",
+    "No fixed tolerance is frozen from match 001"
+  ],
+  "production_weight": 0
+}

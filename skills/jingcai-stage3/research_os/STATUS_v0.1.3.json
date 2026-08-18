@@ -1,0 +1,16 @@
+{
+  "system": "Jingcai Reality-First Research OS",
+  "version": "0.1.3-alpha",
+  "patch": "FINAL_COMPRESSION_BET_CONSTRUCTION_GATE",
+  "date": "2026-08-18",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "staking_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "inherits": "v0.1.2 Full Distribution / Tail-Aware CRS Patch",
+  "new_shadow_module": "shadow_modules/final_compression_bet_construction_shadow_v0_1.py",
+  "production_probability_change": false,
+  "staking_change": false,
+  "thresholds_frozen": false,
+  "silent_promotion_forbidden": true,
+  "self_test": "PASS"
+}

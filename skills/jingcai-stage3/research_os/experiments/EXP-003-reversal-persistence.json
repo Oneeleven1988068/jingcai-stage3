@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-003-REVERSAL-PERSISTENCE",
+  "status": "REGISTERED_SHADOW",
+  "module": "Three-Way Reversal Persistence",
+  "hypothesis": "The age, amplitude and persistence-to-sales-close of a three-way directional reversal may help distinguish transient noise from structurally meaningful market movement, primarily as a confidence/risk gate rather than an automatic directional bet.",
+  "001_observation": "Sporttery HAD reversed to 2.50/3.35/2.32 by 19:13 and, per user observation, remained unchanged through Monday 22:00 sales close; the realized result was home win, so persistence must not be treated as automatic directional truth.",
+  "candidate_features": ["first_reversal_time", "reversal_amplitude_pp", "persistence_minutes_to_sales_close", "sporttery_external_direction_agreement", "context_conflict_state"],
+  "primary_metrics": ["high_confidence_error_rate", "S_error_rate", "A1_error_rate", "coverage", "Brier", "LogLoss"],
+  "falsification_contract": [
+    "Reject if persistence does not improve OOS risk separation",
+    "Reject if it merely encourages chasing the moved side",
+    "Never infer money flow without observed volume/transaction data"
+  ],
+  "production_weight": 0
+}

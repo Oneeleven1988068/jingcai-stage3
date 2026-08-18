@@ -1,0 +1,9 @@
+{
+  "experiment_id": "EXP-005-FULL-DISTRIBUTION-PRESERVATION",
+  "status": "SHADOW",
+  "hypothesis": "Early TTG Top-N truncation discards material probability mass and causes downstream CRS state-space loss.",
+  "intervention": "Preserve all TTG 0..7+ probabilities and the full CRS state map until final presentation compression.",
+  "falsification": "Reject as useful predictive upgrade if OOS calibration/coverage does not improve after controlling candidate count, or if staking metrics worsen.",
+  "immediate_governance_change": "Information-preservation only; no production probability or staking weight changes.",
+  "production_promotion": "NOT_GRANTED"
+}

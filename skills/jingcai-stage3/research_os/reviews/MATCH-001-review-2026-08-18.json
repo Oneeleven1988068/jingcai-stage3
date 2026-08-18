@@ -1,0 +1,32 @@
+{
+  "match": "周一001 Gnistan vs Ilves",
+  "result_user_confirmed": "3-2",
+  "pre_match_staking_decision": "B__NO_BET",
+  "decision_assessment": "PASS_RISK_CONTROL",
+  "observed_close_information": {
+    "last_official_had_update": "2026-08-17 19:13:15 +08:00",
+    "last_official_had_price": {"H": 2.50, "D": 3.35, "A": 2.32},
+    "sales_close": "2026-08-17 22:00:00 +08:00",
+    "unchanged_to_sales_close": true,
+    "confirmation_source": "USER_OBSERVATION",
+    "evidence_state": "OBSERVED",
+    "caveat": "No separately archived official 22:00 snapshot was supplied; close-price persistence is user-confirmed."
+  },
+  "root_cause_policy": {
+    "do_not_rewrite_pre_match_direction_from_result": true,
+    "do_not_use_in_play_events_to_tune_pre_match_weights": true,
+    "single_match_model_promotion_forbidden": true
+  },
+  "production_changes": [
+    "SPORTTERY_SALES_CUTOFF_GATE remains mandatory",
+    "Closing-price provenance now distinguishes last official update time from effective sales-close persistence",
+    "Cross-source market confirmation must carry source timestamps; 'synchronous' wording is forbidden without timestamp support",
+    "Three-Way Reversal Gate remains a risk/confidence gate and does not auto-bet the moved side"
+  ],
+  "shadow_experiments_registered": [
+    "EXP-001-HHAD-MARGIN-DECOMPOSITION",
+    "EXP-002-TTG-TAIL-MASS",
+    "EXP-003-REVERSAL-PERSISTENCE",
+    "EXP-004-MARKET-TIME-ALIGNMENT"
+  ]
+}

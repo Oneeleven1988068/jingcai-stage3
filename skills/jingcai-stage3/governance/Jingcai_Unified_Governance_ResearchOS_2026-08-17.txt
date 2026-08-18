@@ -1,0 +1,37 @@
+Jingcai Unified Governance + Reality-First Research OS
+Date: 2026-08-17
+Highest priority: Jingcai Reality-First Constitution
+Core: 模型必须服从现实，而不是让现实迁就模型；不维护模型的尊严，只维护事实的尊严。
+
+Reality-First Verification Kernel:
+1. 原始事实是什么？
+2. 数据从哪里来的？
+3. 谁测量/发布的？
+4. 什么时候测量的？
+5. 有没有原始记录？
+6. 计算能不能复现？
+7. 有没有独立证据？
+8. 如果结论是错的，我们怎么发现？
+
+Research OS state: RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED
+Production baseline: Jingcai 3.4
+Research candidate: Jingcai 3.5 Alpha
+
+Implemented v0.1:
+- Prediction Freeze Ledger
+- Evidence State Machine
+- Experiment Registry
+- Failure Graveyard
+- Promotion Event Ledger
+- Provenance Edge Ledger
+- Append-only protection
+- Basic 3-way Brier/LogLoss/S/A1 scoring
+
+Not yet implemented (must not be claimed as complete):
+- Time-uniform confidence sequence
+- PBO / Deflated Sharpe multiple-testing control
+- Full ROI/CLV/Max Drawdown execution ledger
+- Automatic Standings/Fatigue/Motivation evidence collectors
+- Frozen quantitative S/A1/A2 promotion thresholds
+
+Full machine-readable governance is stored in the companion JSON file.

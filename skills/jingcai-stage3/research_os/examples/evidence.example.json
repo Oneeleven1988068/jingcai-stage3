@@ -1,0 +1,12 @@
+{
+  "match_ref": "周一001_20260817",
+  "field_name": "home_rank",
+  "evidence_state": "OBSERVED",
+  "source_name": "official_league_table",
+  "source_entity": "league standings publisher",
+  "measured_at_utc": "2026-08-17T10:00:00+00:00",
+  "collected_at_utc": "2026-08-17T10:01:00+00:00",
+  "raw_sha256": "REPLACE_WITH_REAL_HASH",
+  "value": 3,
+  "provenance": {"note": "example only; replace with real source identity"}
+}

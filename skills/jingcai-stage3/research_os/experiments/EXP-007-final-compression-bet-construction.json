@@ -1,0 +1,41 @@
+{
+  "experiment_id": "EXP-007-FINAL-COMPRESSION-BET-CONSTRUCTION",
+  "title": "Final Compression / Bet Construction Gate",
+  "version": "0.1.3-alpha",
+  "state": "SHADOW",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "question": "When full HAD/HHAD/TTG/CRS distributions preserve a meaningful secondary result branch, does final ticket compression silently delete it, and do protection labels map to the result space they claim to protect?",
+  "hypotheses": [
+    "A single-HAD-result final action is structurally riskier when CRS Top-5 already contains an alternate HAD-result state and HHAD is directionally non-confirming.",
+    "Bet-construction semantic type checks can prevent false 'protection' claims such as home -1 HHAD H+D being described as protection against an ordinary draw."
+  ],
+  "deterministic_invariants": [
+    "For home -1, HHAD_H + HHAD_D covers only ordinary HAD_H at result level; it does not cover HAD_D.",
+    "For home +1, HHAD_H covers ordinary HAD_H or HAD_D at result level.",
+    "Full distributions are audited before final compression; no TTG/CRS early truncation is reintroduced."
+  ],
+  "candidate_shadow_alerts": [
+    "SINGLE_RESULT_FINAL_COMPRESSION_CONFLICT",
+    "BET_CONSTRUCTION_SEMANTIC_ERROR",
+    "HAD_HOME_ONLY__HHAD_MINUS1_NONWIN_AGGREGATE_TOP"
+  ],
+  "falsification_contract": {
+    "promotion_requires": "Strict pre-match frozen OOS/walk-forward comparison at matched ticket cost/selection count.",
+    "primary_metrics": [
+      "realized HAD branch coverage at matched selection cost",
+      "S/A1/A2 high-confidence error rate",
+      "ROI and max drawdown after execution ledger maturity",
+      "alert precision / unnecessary expansion rate"
+    ],
+    "reject_or_keep_shadow_if": [
+      "OOS coverage improvement disappears after matching ticket cost",
+      "alerts mostly expand selections without improving high-confidence error rate or drawdown",
+      "benefit is confined to one league/time window",
+      "threshold tuning requires post-outcome information"
+    ],
+    "semantic_type_checks": "Deterministic correctness checks may be enforced as audit warnings without claiming predictive lift; production ticket changes still require explicit approval."
+  },
+  "thresholds": "NOT_FROZEN",
+  "production_weight_change": false,
+  "staking_change": false
+}

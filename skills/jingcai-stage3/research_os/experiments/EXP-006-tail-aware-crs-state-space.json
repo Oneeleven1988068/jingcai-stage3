@@ -1,0 +1,13 @@
+{
+  "experiment_id": "EXP-006-TAIL-AWARE-CRS-STATE-SPACE",
+  "status": "SHADOW",
+  "hypothesis": "CRS should be represented as joint states (result, margin, total, exact score) instead of a fixed low-score Top-N shortlist.",
+  "state_definition": "score=(home_goals,away_goals); HAD=result(score); HHAD constrains margin; TTG constrains total; CRS prices the exact/other state.",
+  "constraints": [
+    "High-score states may belong to H, D, or A.",
+    "Do not multiply HAD*HHAD*TTG*CRS as if independent.",
+    "Other H/D/A buckets remain explicit when exact totals are unknown.",
+    "No fixed entropy/tail/candidate threshold is frozen before OOS validation."
+  ],
+  "production_promotion": "NOT_GRANTED"
+}

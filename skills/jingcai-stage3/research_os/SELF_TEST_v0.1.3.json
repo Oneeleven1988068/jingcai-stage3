@@ -1,0 +1,7 @@
+{
+  "self_test": "PASS",
+  "version": "Final Compression / Bet Construction Shadow v0.1",
+  "semantic_type_check": true,
+  "final_compression_branch_audit": true,
+  "automatic_production_change": false
+}

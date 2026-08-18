@@ -1,0 +1,16 @@
+{
+  "skill": "Jingcai Stage3 Canonical Skill",
+  "version": "1.0.0",
+  "status": "PASS",
+  "checks": {
+    "required_files": true,
+    "research_os_v0_1_5_self_test": true,
+    "production_boundary_present": true,
+    "promotion_not_granted_present": true,
+    "external_coverage_gate_present": true,
+    "browser_fallback_present": true,
+    "sales_cutoff_present": true,
+    "full_distribution_present": true
+  },
+  "missing": []
+}

@@ -1,0 +1,667 @@
+{
+  "module": "Full Distribution / Tail-Aware CRS Shadow v0.2",
+  "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+  "matches": [
+    {
+      "module": "Full Distribution / Tail-Aware CRS Shadow v0.2",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "match_num": "周一001",
+      "match_id": 2040914,
+      "fixture": "赫尔辛基火花 vs 坦佩雷山猫",
+      "evidence_state": "DERIVED",
+      "principle": "NO_EARLY_TOP_N_TRUNCATION__PRESERVE_FULL_DISTRIBUTION_UNTIL_FINAL_COMPRESSION",
+      "had": {
+        "odds": {
+          "H": 2.5,
+          "D": 3.35,
+          "A": 2.32
+        },
+        "p": {
+          "H": 0.35412584863534885,
+          "D": 0.26427302136966324,
+          "A": 0.38160112999498796
+        },
+        "update_time_local": "2026-08-17T19:13:15+08:00"
+      },
+      "hhad": {
+        "line": "-1",
+        "odds": {
+          "H": 5.15,
+          "D": 4.75,
+          "A": 1.38
+        },
+        "p": {
+          "H": 0.1719366811368018,
+          "D": 0.18641555954832192,
+          "A": 0.6416477593148764
+        },
+        "update_time_local": "2026-08-17T19:13:19+08:00"
+      },
+      "symmetric_margin": {
+        "side": "HOME_WIN",
+        "identity": "HAD_H ~ HHAD_H + HHAD_D",
+        "p_win_2plus": 0.1719366811368018,
+        "p_win_1": 0.18641555954832192,
+        "partition": 0.3583522406851237,
+        "had_direction_p": 0.35412584863534885,
+        "gap_pp": 0.4226392049774874,
+        "conditional": {
+          "win_1": 0.5202020202020201,
+          "win_2plus": 0.47979797979797983
+        },
+        "usage": "CONSISTENCY_ALWAYS__MARGIN_PREDICTION_ONLY_AFTER_HAD_DIRECTION_GATE"
+      },
+      "ttg": {
+        "odds": {
+          "0": 20.0,
+          "1": 7.35,
+          "2": 4.15,
+          "3": 3.5,
+          "4": 4.5,
+          "5": 7.3,
+          "6": 13.0,
+          "7+": 18.0
+        },
+        "p": {
+          "0": 0.041513767345602005,
+          "1": 0.11296263223293063,
+          "2": 0.2000663486535036,
+          "3": 0.23722152768915428,
+          "4": 0.18450563264712,
+          "5": 0.11373634889206027,
+          "6": 0.06386733437784924,
+          "7+": 0.04612640816178
+        },
+        "mode": 3,
+        "mode_p": 0.23722152768915428,
+        "bands": {
+          "0-1": 0.15447639957853262,
+          "2-3": 0.43728787634265787,
+          "4-5": 0.29824198153918025,
+          "6+": 0.10999374253962924
+        },
+        "tail_mass": {
+          "4+": 0.4082357240788095,
+          "5+": 0.2237300914316895,
+          "6+": 0.10999374253962924,
+          "7+": 0.04612640816178
+        },
+        "normalized_entropy": 0.9225218806039506,
+        "effective_support": 6.809579165048643,
+        "retained_probability_mass": 1.0,
+        "truncation": "NONE",
+        "update_time_local": "2026-08-17T19:16:39+08:00"
+      },
+      "crs": {
+        "update_time_local": "2026-08-17T19:19:18+08:00",
+        "exact_mass": 0.9615497880015604,
+        "other_mass": 0.03845021199843945,
+        "direction_mass_including_other": {
+          "H": 0.3674076906465056,
+          "D": 0.24374893092664368,
+          "A": 0.3888433784268507
+        },
+        "exact_total_band_mass_lower_bound": {
+          "0-1": 0.15698231275105118,
+          "2-3": 0.4156613235267406,
+          "4-5": 0.30644576776567584,
+          "6+": 0.08246038395809283
+        },
+        "exact_tail_mass_lower_bound": {
+          "4+": 0.3889061517237687,
+          "5+": 0.19698570229336768,
+          "6+": 0.08246038395809283
+        },
+        "other_buckets": [
+          {
+            "key": "s1sd",
+            "bucket": "OTHER_D",
+            "odds": 125.0,
+            "p": 0.005972985558332679,
+            "result": "D"
+          },
+          {
+            "key": "s1sh",
+            "bucket": "OTHER_H",
+            "odds": 47.0,
+            "p": 0.01588559988918266,
+            "result": "H"
+          },
+          {
+            "key": "s1sa",
+            "bucket": "OTHER_A",
+            "odds": 45.0,
+            "p": 0.01659162655092411,
+            "result": "A"
+          }
+        ],
+        "core_exact_top3": [
+          {
+            "key": "s01s01",
+            "score": "1:1",
+            "home": 1,
+            "away": 1,
+            "odds": 7.4,
+            "p": 0.10089502632318713,
+            "result": "D",
+            "margin": 0,
+            "total": 2,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s01s02",
+            "score": "1:2",
+            "home": 1,
+            "away": 2,
+            "odds": 8.65,
+            "p": 0.08631482020711964,
+            "result": "A",
+            "margin": -1,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s02s01",
+            "score": "2:1",
+            "home": 2,
+            "away": 1,
+            "odds": 8.75,
+            "p": 0.08532836511903827,
+            "result": "H",
+            "margin": 1,
+            "total": 3,
+            "total_band": "2-3"
+          }
+        ],
+        "core_exact_top5": [
+          {
+            "key": "s01s01",
+            "score": "1:1",
+            "home": 1,
+            "away": 1,
+            "odds": 7.4,
+            "p": 0.10089502632318713,
+            "result": "D",
+            "margin": 0,
+            "total": 2,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s01s02",
+            "score": "1:2",
+            "home": 1,
+            "away": 2,
+            "odds": 8.65,
+            "p": 0.08631482020711964,
+            "result": "A",
+            "margin": -1,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s02s01",
+            "score": "2:1",
+            "home": 2,
+            "away": 1,
+            "odds": 8.75,
+            "p": 0.08532836511903827,
+            "result": "H",
+            "margin": 1,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s02s02",
+            "score": "2:2",
+            "home": 2,
+            "away": 2,
+            "odds": 10.0,
+            "p": 0.0746623194791585,
+            "result": "D",
+            "margin": 0,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s00s01",
+            "score": "0:1",
+            "home": 0,
+            "away": 1,
+            "odds": 12.0,
+            "p": 0.062218599565965406,
+            "result": "A",
+            "margin": -1,
+            "total": 1,
+            "total_band": "0-1"
+          }
+        ],
+        "tail_exact_top3_4plus": [
+          {
+            "key": "s02s02",
+            "score": "2:2",
+            "home": 2,
+            "away": 2,
+            "odds": 10.0,
+            "p": 0.0746623194791585,
+            "result": "D",
+            "margin": 0,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s03s01",
+            "score": "3:1",
+            "home": 3,
+            "away": 1,
+            "odds": 16.0,
+            "p": 0.046663949674474056,
+            "result": "H",
+            "margin": 2,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s01s03",
+            "score": "1:3",
+            "home": 1,
+            "away": 3,
+            "odds": 16.0,
+            "p": 0.046663949674474056,
+            "result": "A",
+            "margin": -2,
+            "total": 4,
+            "total_band": "4-5"
+          }
+        ],
+        "tail_exact_top3_5plus": [
+          {
+            "key": "s02s03",
+            "score": "2:3",
+            "home": 2,
+            "away": 3,
+            "odds": 20.0,
+            "p": 0.03733115973957925,
+            "result": "A",
+            "margin": -1,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s03s02",
+            "score": "3:2",
+            "home": 3,
+            "away": 2,
+            "odds": 22.0,
+            "p": 0.03393741794507204,
+            "result": "H",
+            "margin": 1,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s03s03",
+            "score": "3:3",
+            "home": 3,
+            "away": 3,
+            "odds": 30.0,
+            "p": 0.02488743982638616,
+            "result": "D",
+            "margin": 0,
+            "total": 6,
+            "total_band": "6+"
+          }
+        ],
+        "all_exact_states": [
+          {
+            "key": "s01s01",
+            "score": "1:1",
+            "home": 1,
+            "away": 1,
+            "odds": 7.4,
+            "p": 0.10089502632318713,
+            "result": "D",
+            "margin": 0,
+            "total": 2,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s01s02",
+            "score": "1:2",
+            "home": 1,
+            "away": 2,
+            "odds": 8.65,
+            "p": 0.08631482020711964,
+            "result": "A",
+            "margin": -1,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s02s01",
+            "score": "2:1",
+            "home": 2,
+            "away": 1,
+            "odds": 8.75,
+            "p": 0.08532836511903827,
+            "result": "H",
+            "margin": 1,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s02s02",
+            "score": "2:2",
+            "home": 2,
+            "away": 2,
+            "odds": 10.0,
+            "p": 0.0746623194791585,
+            "result": "D",
+            "margin": 0,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s00s01",
+            "score": "0:1",
+            "home": 0,
+            "away": 1,
+            "odds": 12.0,
+            "p": 0.062218599565965406,
+            "result": "A",
+            "margin": -1,
+            "total": 1,
+            "total_band": "0-1"
+          },
+          {
+            "key": "s01s00",
+            "score": "1:0",
+            "home": 1,
+            "away": 0,
+            "odds": 13.0,
+            "p": 0.05743255344550653,
+            "result": "H",
+            "margin": 1,
+            "total": 1,
+            "total_band": "0-1"
+          },
+          {
+            "key": "s03s01",
+            "score": "3:1",
+            "home": 3,
+            "away": 1,
+            "odds": 16.0,
+            "p": 0.046663949674474056,
+            "result": "H",
+            "margin": 2,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s00s02",
+            "score": "0:2",
+            "home": 0,
+            "away": 2,
+            "odds": 16.0,
+            "p": 0.046663949674474056,
+            "result": "A",
+            "margin": -2,
+            "total": 2,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s01s03",
+            "score": "1:3",
+            "home": 1,
+            "away": 3,
+            "odds": 16.0,
+            "p": 0.046663949674474056,
+            "result": "A",
+            "margin": -2,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s02s00",
+            "score": "2:0",
+            "home": 2,
+            "away": 0,
+            "odds": 17.0,
+            "p": 0.04391901145832852,
+            "result": "H",
+            "margin": 2,
+            "total": 2,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s00s00",
+            "score": "0:0",
+            "home": 0,
+            "away": 0,
+            "odds": 20.0,
+            "p": 0.03733115973957925,
+            "result": "D",
+            "margin": 0,
+            "total": 0,
+            "total_band": "0-1"
+          },
+          {
+            "key": "s02s03",
+            "score": "2:3",
+            "home": 2,
+            "away": 3,
+            "odds": 20.0,
+            "p": 0.03733115973957925,
+            "result": "A",
+            "margin": -1,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s03s02",
+            "score": "3:2",
+            "home": 3,
+            "away": 2,
+            "odds": 22.0,
+            "p": 0.03393741794507204,
+            "result": "H",
+            "margin": 1,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s00s03",
+            "score": "0:3",
+            "home": 0,
+            "away": 3,
+            "odds": 27.0,
+            "p": 0.027652710918206844,
+            "result": "A",
+            "margin": -3,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s03s03",
+            "score": "3:3",
+            "home": 3,
+            "away": 3,
+            "odds": 30.0,
+            "p": 0.02488743982638616,
+            "result": "D",
+            "margin": 0,
+            "total": 6,
+            "total_band": "6+"
+          },
+          {
+            "key": "s03s00",
+            "score": "3:0",
+            "home": 3,
+            "away": 0,
+            "odds": 30.0,
+            "p": 0.02488743982638616,
+            "result": "H",
+            "margin": 3,
+            "total": 3,
+            "total_band": "2-3"
+          },
+          {
+            "key": "s01s04",
+            "score": "1:4",
+            "home": 1,
+            "away": 4,
+            "odds": 40.0,
+            "p": 0.018665579869789624,
+            "result": "A",
+            "margin": -3,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s04s01",
+            "score": "4:1",
+            "home": 4,
+            "away": 1,
+            "odds": 45.0,
+            "p": 0.01659162655092411,
+            "result": "H",
+            "margin": 3,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s04s02",
+            "score": "4:2",
+            "home": 4,
+            "away": 2,
+            "odds": 45.0,
+            "p": 0.01659162655092411,
+            "result": "H",
+            "margin": 2,
+            "total": 6,
+            "total_band": "6+"
+          },
+          {
+            "key": "s02s04",
+            "score": "2:4",
+            "home": 2,
+            "away": 4,
+            "odds": 45.0,
+            "p": 0.01659162655092411,
+            "result": "A",
+            "margin": -2,
+            "total": 6,
+            "total_band": "6+"
+          },
+          {
+            "key": "s00s04",
+            "score": "0:4",
+            "home": 0,
+            "away": 4,
+            "odds": 60.0,
+            "p": 0.01244371991319308,
+            "result": "A",
+            "margin": -4,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s04s00",
+            "score": "4:0",
+            "home": 4,
+            "away": 0,
+            "odds": 65.0,
+            "p": 0.011486510689101306,
+            "result": "H",
+            "margin": 4,
+            "total": 4,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s01s05",
+            "score": "1:5",
+            "home": 1,
+            "away": 5,
+            "odds": 100.0,
+            "p": 0.007466231947915849,
+            "result": "A",
+            "margin": -4,
+            "total": 6,
+            "total_band": "6+"
+          },
+          {
+            "key": "s02s05",
+            "score": "2:5",
+            "home": 2,
+            "away": 5,
+            "odds": 125.0,
+            "p": 0.005972985558332679,
+            "result": "A",
+            "margin": -3,
+            "total": 7,
+            "total_band": "6+"
+          },
+          {
+            "key": "s05s01",
+            "score": "5:1",
+            "home": 5,
+            "away": 1,
+            "odds": 125.0,
+            "p": 0.005972985558332679,
+            "result": "H",
+            "margin": 4,
+            "total": 6,
+            "total_band": "6+"
+          },
+          {
+            "key": "s05s02",
+            "score": "5:2",
+            "home": 5,
+            "away": 2,
+            "odds": 150.0,
+            "p": 0.004977487965277233,
+            "result": "H",
+            "margin": 3,
+            "total": 7,
+            "total_band": "6+"
+          },
+          {
+            "key": "s00s05",
+            "score": "0:5",
+            "home": 0,
+            "away": 5,
+            "odds": 175.0,
+            "p": 0.004266418255951913,
+            "result": "A",
+            "margin": -5,
+            "total": 5,
+            "total_band": "4-5"
+          },
+          {
+            "key": "s05s00",
+            "score": "5:0",
+            "home": 5,
+            "away": 0,
+            "odds": 200.0,
+            "p": 0.0037331159739579247,
+            "result": "H",
+            "margin": 5,
+            "total": 5,
+            "total_band": "4-5"
+          }
+        ],
+        "important_caveat": "CRS other-score buckets have result direction but no exact total/margin. Exact tail masses are lower bounds when other_mass>0."
+      },
+      "had_crs_direction_gap_pp": {
+        "H": 1.328184201115673,
+        "D": -2.052409044301956,
+        "A": 0.7242248431862719
+      },
+      "compression_policy": {
+        "old_forbidden_pattern": "TTG_TOP_N -> CRS_CANDIDATE_SPACE",
+        "new_shadow_pattern": "FULL_TTG + FULL_CRS_STATE_MAP -> FINAL_PRESENTATION_COMPRESSION_ONLY",
+        "production_weight_change": false,
+        "thresholds_frozen": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "snapshot_name": "Jingcai Stage3 Unified Governance Snapshot",
+  "snapshot_date": "2026-08-17",
+  "timezone": "Asia/Singapore",
+  "version_governance": {
+    "production_baseline": "Jingcai 3.4",
+    "research_candidate": "Jingcai 3.5 Alpha",
+    "data_layer": "3.5 Alpha Stage3 Data Layer 0.1",
+    "governance_state": "DATA_LAYER_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+    "case1_2_3_status": "diagnostic_only",
+    "new_S_A1_A2_thresholds": "not_frozen"
+  },
+  "decision_order": [
+    "HAD",
+    "HHAD",
+    "TTG",
+    "CRS",
+    "HAFU",
+    "context_and_risk_gates",
+    "final_rating_and_staking_permission"
+  ],
+  "ratings": {
+    "S": "最高确认/主动进攻级，可考虑比分投注",
+    "A1": "核心串关主体",
+    "A2": "方向可投但风险明显，只适合保护/单场/复式，不作核心胆",
+    "B": "观察不下注",
+    "C": "排除"
+  },
+  "stage3_data_chain": [
+    "Stage3 Collector",
+    "Parser/Builder",
+    "SQLite append-only / audit",
+    "exports",
+    "External Market Bridge",
+    "context layers"
+  ],
+  "sporttery_pools": [
+    "HAD",
+    "HHAD",
+    "CRS",
+    "TTG",
+    "HAFU"
+  ],
+  "data_governance": {
+    "store_raw_json": true,
+    "store_canonical_json": true,
+    "capture_utc_local": true,
+    "store_pool_presence_count": true,
+    "store_sha256": true,
+    "keep_unchanged_odds_as_new_snapshot": true,
+    "new_json_preferred_location": "Jingcai Stage3 project chats",
+    "missing_validation_behavior": "UNVERIFIED"
+  },
+  "external_market_bridge": {
+    "role": "audit/divergence/overheat/dispersion gate",
+    "not_role": "direct replacement of Jingcai 3.4 probability core",
+    "markets": [
+      "H2H/1X2",
+      "spreads",
+      "totals"
+    ],
+    "consensus": [
+      "dejuiced_probabilities",
+      "median_prob",
+      "MAD",
+      "bookmaker_count"
+    ],
+    "default_divergence_pp": 4.0,
+    "default_overheat_pp": 4.0,
+    "minimum_bookmakers": 3,
+    "audit_gate": "MANDATORY_LIVE"
+  },
+  "non_production_features": [
+    "External positive probability fusion",
+    "Shin",
+    "Residual ML",
+    "dynamic team strength/xG",
+    "multi-score distribution as formal HAD weight"
+  ],
+  "market_structure_gates": [
+    "Three-Way Directional Reversal Gate",
+    "Favorite Crowding / Popular-Side Distortion Gate"
+  ],
+  "league_context_standings": {
+    "role": "mandatory context/audit; confidence/risk gate",
+    "fields": [
+      "home_rank",
+      "away_rank",
+      "home_points",
+      "away_points",
+      "home_played",
+      "away_played",
+      "home_W",
+      "home_D",
+      "home_L",
+      "away_W",
+      "away_D",
+      "away_L",
+      "home_GF",
+      "home_GA",
+      "home_GD",
+      "away_GF",
+      "away_GA",
+      "away_GD",
+      "rank_gap",
+      "points_gap",
+      "ppg_gap",
+      "gf_pg_gap",
+      "ga_pg_gap",
+      "gd_pg_gap"
+    ],
+    "states": [
+      "STANDINGS_STRONG_CONFIRM",
+      "STANDINGS_SOFT_CONFIRM",
+      "STANDINGS_NEUTRAL",
+      "STANDINGS_DIRECTIONAL_CONFLICT",
+      "STANDINGS_UNVERIFIED"
+    ],
+    "alerts": [
+      "RANK_ADVANTAGE_COMPRESSION",
+      "LOW_TABLE_FAVORITE_WARNING"
+    ]
+  },
+  "home_away_recent_form": {
+    "principle": "season table, home/away splits, and recent form are separate time scales",
+    "recent_form_not_just_WDL": true
+  },
+  "schedule_congestion_travel_fatigue": {
+    "role": "mandatory context/audit",
+    "fields": [
+      "rest_days",
+      "matches_last_7d",
+      "matches_last_14d",
+      "matches_last_21d",
+      "away_streak",
+      "cross_country_trips_14d",
+      "travel_km_14d",
+      "timezone_shift",
+      "extra_time_recent",
+      "fixture_congestion_score",
+      "travel_fatigue_score",
+      "rotation_risk"
+    ],
+    "unverified_state": "FATIGUE_UNVERIFIED"
+  },
+  "match_motivation_competitive_stakes": {
+    "role": "mandatory context/audit",
+    "fields": [
+      "must_win_home",
+      "must_win_away",
+      "draw_sufficient_home",
+      "draw_sufficient_away",
+      "must_not_lose_home",
+      "must_not_lose_away",
+      "points_needed_home",
+      "points_needed_away",
+      "title_race_pressure",
+      "qualification_pressure",
+      "relegation_pressure",
+      "dead_rubber_home",
+      "dead_rubber_away",
+      "goal_difference_pressure",
+      "next_match_priority",
+      "motivation_score_home",
+      "motivation_score_away",
+      "motivation_asymmetry",
+      "competitive_stakes_state"
+    ],
+    "unverified_state": "MOTIVATION_UNVERIFIED"
+  },
+  "multi_layer_principle": "Probability/market layers form direction first; context layers confirm/conflict/risk-gate. No single context variable mechanically decides direction. In multi-layer conflict, downgrade to protect capital.",
+  "backtest_governance": {
+    "mode": "shadow/OOS/Walk-forward before promotion",
+    "no_lookahead": true,
+    "focus_metrics": [
+      "overall accuracy",
+      "Brier",
+      "LogLoss",
+      "RPS",
+      "ECE",
+      "S error rate",
+      "A1 error rate",
+      "high-confidence error rate",
+      "favorite upset rate",
+      "overheat downgrade hit rate",
+      "directional/standings conflict loss control",
+      "ROI/CLV after data maturity",
+      "league/season-stage stability"
+    ]
+  },
+  "default_output": {
+    "chat_columns": [
+      "match_no",
+      "kickoff_time",
+      "fixture",
+      "HAD",
+      "HHAD",
+      "CRS",
+      "TTG",
+      "HAFU",
+      "risk_rating",
+      "upset_probability_or_overheat_alert",
+      "betting_recommendation"
+    ],
+    "extra_sections": [
+      "S matches",
+      "A1/A2 matches"
+    ],
+    "download_preference": "landscape Excel printable table after full analysis"
+  },
+  "public_content_rule": "Do not expose internal model details in XHS/public outputs."
+}

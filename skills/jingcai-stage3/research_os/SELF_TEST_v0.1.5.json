@@ -1,0 +1,12 @@
+{
+  "self_test": "PASS",
+  "version": "Hybrid CRS Satellite Bet Construction Shadow v0.1",
+  "hybrid_crs_satellite_role_separation": true,
+  "a1_a2_anchor_gate": true,
+  "no_forced_b_or_c_promotion": true,
+  "mixed_pool_compatibility_must_be_observed": true,
+  "multi_selection_cost_expansion_audited": true,
+  "classic_single_selection_pair_plus_triple_count": 4,
+  "three_score_satellite_single_anchor_pair_plus_triple_count": 10,
+  "production_promotion": false
+}

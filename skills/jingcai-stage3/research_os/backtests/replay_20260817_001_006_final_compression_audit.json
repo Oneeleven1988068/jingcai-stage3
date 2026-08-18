@@ -1,0 +1,338 @@
+{
+  "module": "Final Compression / Bet Construction Shadow v0.1",
+  "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+  "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "source_input": "/mnt/data/sporttery_5pools_20260817_213123.json",
+  "specs_source": "/mnt/data/Jingcai_Research_OS_v0.1.3_final_compression/reviews/FROZEN_ACTION_SPECS_20260817_2131.json",
+  "outcomes_source": "/mnt/data/Jingcai_Research_OS_v0.1.3_final_compression/reviews/OBSERVED_RESULTS_20260818_0900.json",
+  "n_rows": 6,
+  "n_actionable": 3,
+  "action_hit_count": 2,
+  "action_miss_count": 1,
+  "important_caveat": "This is a retrospective replay of frozen/reconstructed ticket semantics, not prospective proof of predictive improvement.",
+  "rows": [
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一001",
+      "fixture": "赫尔辛基火花 vs 坦佩雷山猫",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "B",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [],
+        "label": "skip",
+        "action_type": "NO_BET"
+      },
+      "compression_diagnostics": {
+        "state": "NO_HAD_FINAL_COMPRESSION_TO_AUDIT",
+        "flags": []
+      },
+      "protection_semantics": {
+        "state": "NONE_DECLARED",
+        "flags": []
+      },
+      "postmatch": {
+        "actual_score": "3:2",
+        "actual_had": "H",
+        "production_action_hit": null,
+        "actual_result_was_dropped_by_final_compression": null,
+        "actual_score_crs_exact_rank": 13,
+        "actual_score_crs_dejuiced_p": 0.03393741794507204,
+        "actual_score_was_preserved_in_full_crs_state": true
+      },
+      "decision": {
+        "shadow_gate_state": "NO_SHADOW_ALERT",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    },
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一002",
+      "fixture": "赫根 vs 哈尔姆斯塔德",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "A1",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [
+          "H"
+        ],
+        "label": "home win",
+        "action_type": "BET"
+      },
+      "compression_diagnostics": {
+        "selected_had_results": [
+          "H"
+        ],
+        "dropped_had_results": [
+          "D",
+          "A"
+        ],
+        "had_mass_retained": 0.7259640274553684,
+        "had_mass_dropped": 0.27403597254463163,
+        "crs_direction_mass_retained": 0.7379817702771543,
+        "crs_direction_mass_dropped": 0.26201822972284566,
+        "crs_top5_alternate_states": [],
+        "flags": []
+      },
+      "protection_semantics": {
+        "state": "NONE_DECLARED",
+        "flags": []
+      },
+      "postmatch": {
+        "actual_score": "1:0",
+        "actual_had": "H",
+        "production_action_hit": true,
+        "actual_result_was_dropped_by_final_compression": false,
+        "actual_score_crs_exact_rank": 5,
+        "actual_score_crs_dejuiced_p": 0.0747029803320066,
+        "actual_score_was_preserved_in_full_crs_state": true
+      },
+      "decision": {
+        "shadow_gate_state": "NO_SHADOW_ALERT",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    },
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一003",
+      "fixture": "加的夫城 vs 雷克斯汉姆",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "B",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [],
+        "label": "skip / draw risk",
+        "action_type": "NO_BET"
+      },
+      "compression_diagnostics": {
+        "state": "NO_HAD_FINAL_COMPRESSION_TO_AUDIT",
+        "flags": []
+      },
+      "protection_semantics": {
+        "state": "NONE_DECLARED",
+        "flags": []
+      },
+      "postmatch": {
+        "actual_score": "1:1",
+        "actual_had": "D",
+        "production_action_hit": null,
+        "actual_result_was_dropped_by_final_compression": null,
+        "actual_score_crs_exact_rank": 1,
+        "actual_score_crs_dejuiced_p": 0.11481997223163751,
+        "actual_score_was_preserved_in_full_crs_state": true
+      },
+      "decision": {
+        "shadow_gate_state": "NO_SHADOW_ALERT",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    },
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一004",
+      "fixture": "拉科鲁尼亚 vs 埃尔切",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "A2",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [
+          "H",
+          "D"
+        ],
+        "label": "home/draw",
+        "action_type": "BET"
+      },
+      "compression_diagnostics": {
+        "selected_had_results": [
+          "H",
+          "D"
+        ],
+        "dropped_had_results": [
+          "A"
+        ],
+        "had_mass_retained": 0.7467193881984879,
+        "had_mass_dropped": 0.25328061180151207,
+        "crs_direction_mass_retained": 0.6934106021602198,
+        "crs_direction_mass_dropped": 0.30658939783978034,
+        "crs_top5_alternate_states": [
+          {
+            "rank": 4,
+            "score": "0:1",
+            "result": "A",
+            "p": 0.0933467655860495
+          }
+        ],
+        "flags": [
+          "CRS_TOP5_CONTAINS_DROPPED_RESULT_BRANCH"
+        ]
+      },
+      "protection_semantics": {
+        "state": "NONE_DECLARED",
+        "flags": []
+      },
+      "postmatch": {
+        "actual_score": "1:1",
+        "actual_had": "D",
+        "production_action_hit": true,
+        "actual_result_was_dropped_by_final_compression": false,
+        "actual_score_crs_exact_rank": 1,
+        "actual_score_crs_dejuiced_p": 0.12987376081537322,
+        "actual_score_was_preserved_in_full_crs_state": true
+      },
+      "decision": {
+        "shadow_gate_state": "NO_SHADOW_ALERT",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    },
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一005",
+      "fixture": "卡萨皮亚 vs 本菲卡",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "B_PRODUCTION__A2_SHADOW",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [],
+        "label": "production skip; HAD missing",
+        "action_type": "NO_BET"
+      },
+      "compression_diagnostics": {
+        "state": "NO_HAD_FINAL_COMPRESSION_TO_AUDIT",
+        "flags": []
+      },
+      "protection_semantics": {
+        "state": "NONE_DECLARED",
+        "flags": []
+      },
+      "postmatch": {
+        "actual_score": "0:7",
+        "actual_had": "A",
+        "production_action_hit": null,
+        "actual_result_was_dropped_by_final_compression": null,
+        "actual_score_crs_exact_rank": null,
+        "actual_score_crs_dejuiced_p": null,
+        "actual_score_was_preserved_in_full_crs_state": false
+      },
+      "decision": {
+        "shadow_gate_state": "NO_SHADOW_ALERT",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    },
+    {
+      "module": "Final Compression / Bet Construction Shadow v0.1",
+      "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+      "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+      "match_num": "周一006",
+      "fixture": "巴西国际 vs 里莫",
+      "spec_evidence_state": "RECONSTRUCTED_FROM_2026-08-17_21:31_FROZEN_REVIEW",
+      "rating": "A2",
+      "principle": "FULL_DISTRIBUTION_FIRST__FINAL_COMPRESSION_MUST_NOT_SILENTLY_DELETE_MATERIAL_BRANCHES",
+      "production_change": false,
+      "thresholds_frozen": false,
+      "production_action": {
+        "market": "HAD",
+        "selections": [
+          "H"
+        ],
+        "label": "home win, non-banker",
+        "action_type": "BET"
+      },
+      "compression_diagnostics": {
+        "selected_had_results": [
+          "H"
+        ],
+        "dropped_had_results": [
+          "D",
+          "A"
+        ],
+        "had_mass_retained": 0.6196549137284322,
+        "had_mass_dropped": 0.3803450862715679,
+        "crs_direction_mass_retained": 0.612353072567767,
+        "crs_direction_mass_dropped": 0.3876469274322331,
+        "crs_top5_alternate_states": [
+          {
+            "rank": 4,
+            "score": "1:1",
+            "result": "D",
+            "p": 0.10372250054678321
+          }
+        ],
+        "flags": [
+          "CRS_TOP5_CONTAINS_DROPPED_RESULT_BRANCH",
+          "SINGLE_RESULT_FINAL_COMPRESSION_CONFLICT"
+        ]
+      },
+      "protection_semantics": {
+        "market": "HHAD",
+        "line": "-1",
+        "selections": [
+          "H",
+          "D"
+        ],
+        "claimed_intent": "PROTECT_HAD_DRAW",
+        "had_result_level_coverage": [
+          "H"
+        ],
+        "flags": [
+          "BET_CONSTRUCTION_SEMANTIC_ERROR",
+          "CLAIMED_D_PROTECTION_NOT_COVERED"
+        ],
+        "important_note": "For home -1, HHAD H+D partitions ordinary HAD home wins; it does not protect an ordinary draw."
+      },
+      "cross_layer_flags": [
+        "HAD_HOME_ONLY__HHAD_MINUS1_NONWIN_AGGREGATE_TOP"
+      ],
+      "cross_layer_note": "HHAD -1 A contains ordinary draw plus away-win states; this is a risk diagnostic, not an automatic reversal.",
+      "postmatch": {
+        "actual_score": "1:1",
+        "actual_had": "D",
+        "production_action_hit": false,
+        "actual_result_was_dropped_by_final_compression": true,
+        "actual_score_crs_exact_rank": 4,
+        "actual_score_crs_dejuiced_p": 0.10372250054678321,
+        "actual_score_was_preserved_in_full_crs_state": true,
+        "attribution": "FULL_DISTRIBUTION_PRESERVED_REALIZED_SCORE__FINAL_COMPRESSION_DROPPED_REALIZED_RESULT_BRANCH"
+      },
+      "decision": {
+        "shadow_gate_state": "REVIEW_REQUIRED",
+        "automatic_bet_change": false,
+        "automatic_rating_change": false,
+        "promotion": "NOT_GRANTED"
+      }
+    }
+  ]
+}

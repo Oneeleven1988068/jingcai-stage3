@@ -1,0 +1,103 @@
+{
+  "system_name": "Jingcai Reality-First Research OS",
+  "version": "0.1.1-alpha",
+  "date": "2026-08-18",
+  "priority": "ABOVE_ALL_MODEL_VERSIONS",
+  "constitution": {
+    "name": "Jingcai Reality-First Constitution",
+    "core": "模型必须服从现实，而不是让现实迁就模型；不维护模型的尊严，只维护事实的尊严。",
+    "verification_kernel_questions": [
+      "原始事实是什么？",
+      "数据从哪里来的？",
+      "谁测量/发布的？",
+      "什么时候测量的？",
+      "有没有原始记录？",
+      "计算能不能复现？",
+      "有没有独立证据？",
+      "如果结论是错的，我们怎么发现？"
+    ]
+  },
+  "evidence_states": [
+    "OBSERVED",
+    "DERIVED",
+    "MODEL_OUTPUT",
+    "INFERRED",
+    "HYPOTHESIS",
+    "INPUT_INCOMPLETE",
+    "UNVERIFIED"
+  ],
+  "research_loop": [
+    "OBSERVE",
+    "VERIFY",
+    "PREDICT_AND_FREEZE",
+    "ACT_IF_PRICE_JUSTIFIES",
+    "REALITY_SETTLES",
+    "SCORE",
+    "FALSIFY",
+    "KEEP_DEMOTE_OR_KILL"
+  ],
+  "production_boundary": {
+    "staking_baseline": "Jingcai 3.4",
+    "research_candidate": "Jingcai 3.5 Alpha",
+    "stage3_data_layer": "3.5 Alpha Stage3 Data Layer 0.1",
+    "research_os_role": "audit/research control plane",
+    "silent_promotion_forbidden": true
+  },
+  "mandatory_controls": {
+    "prediction_freeze_ledger": true,
+    "experiment_registry": true,
+    "failure_graveyard": true,
+    "evidence_state_machine": true,
+    "provenance_graph": true,
+    "baseline_ladder": true,
+    "oos_walk_forward_before_promotion": true,
+    "lookahead_forbidden": true,
+    "failed_models_retained": true,
+    "complexity_must_pay_for_itself": true,
+    "sporttery_sales_cutoff_gate": true,
+    "cross_source_timestamp_provenance": true
+  },
+  "baseline_ladder": [
+    "Sporttery de-juiced market baseline",
+    "simple external-market benchmark",
+    "Jingcai 3.4 production baseline",
+    "current Jingcai 3.5 Alpha probability core",
+    "candidate module/model"
+  ],
+  "promotion_states": [
+    "SHADOW",
+    "PROMOTION_REVIEW",
+    "PRODUCTION",
+    "REJECTED",
+    "RETIRED"
+  ],
+  "promotion_principles": [
+    "No single-night promotion",
+    "No promotion without frozen pre-match predictions",
+    "No promotion without reproducible inputs and code/version identity",
+    "No promotion when improvement disappears under strict OOS/walk-forward",
+    "No promotion when complexity cost exceeds robust benefit",
+    "Production changes require explicit human approval"
+  ],
+  "core_metrics": [
+    "Brier",
+    "LogLoss",
+    "RPS",
+    "ECE/calibration",
+    "S error rate",
+    "A1 error rate",
+    "high-confidence error rate",
+    "favorite upset rate",
+    "overheat downgrade effectiveness",
+    "drawdown",
+    "ROI",
+    "CLV when mature"
+  ],
+  "patch_note": "Match 001 reality-first iteration: sales-close provenance, asynchronous market timestamps, HHAD margin decomposition shadow, TTG tail-mass shadow, reversal-persistence shadow.",
+  "shadow_experiments": [
+    "EXP-001-HHAD-MARGIN-DECOMPOSITION",
+    "EXP-002-TTG-TAIL-MASS",
+    "EXP-003-REVERSAL-PERSISTENCE",
+    "EXP-004-MARKET-TIME-ALIGNMENT"
+  ]
+}

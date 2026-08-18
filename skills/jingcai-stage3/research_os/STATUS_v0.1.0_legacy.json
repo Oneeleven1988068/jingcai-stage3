@@ -1,0 +1,21 @@
+{
+  "component": "Jingcai Reality-First Research OS",
+  "version": "0.1.0-alpha",
+  "build_date": "2026-08-17",
+  "governance_state": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+  "staking_baseline": "Jingcai 3.4",
+  "research_candidate": "Jingcai 3.5 Alpha",
+  "prediction_freeze_ledger": "IMPLEMENTED",
+  "evidence_state_machine": "IMPLEMENTED",
+  "experiment_registry": "IMPLEMENTED",
+  "failure_graveyard": "IMPLEMENTED",
+  "promotion_event_ledger": "IMPLEMENTED",
+  "provenance_edge_ledger": "IMPLEMENTED",
+  "append_only_triggers": "IMPLEMENTED",
+  "basic_probability_scoring": "IMPLEMENTED",
+  "time_uniform_confidence_sequence": "NOT_IMPLEMENTED",
+  "PBO_DSR_multiple_testing_control": "NOT_IMPLEMENTED",
+  "full_ROI_CLV_drawdown_ledger": "NOT_IMPLEMENTED",
+  "automatic_context_collectors": "NOT_IMPLEMENTED",
+  "silent_model_promotion": "FORBIDDEN"
+}

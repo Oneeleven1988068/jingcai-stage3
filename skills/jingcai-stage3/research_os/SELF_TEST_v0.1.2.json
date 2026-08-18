@@ -1,0 +1,8 @@
+{
+  "self_test": "PASS",
+  "version": "Full Distribution / Tail-Aware CRS Shadow v0.2",
+  "no_early_truncation": true,
+  "symmetric_plus_minus_one": true,
+  "crs_full_state": true,
+  "production_promotion": false
+}

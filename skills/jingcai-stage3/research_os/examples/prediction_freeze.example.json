@@ -1,0 +1,18 @@
+{
+  "match_ref": "周一001_20260817",
+  "kickoff_utc": "2026-08-17T12:00:00+00:00",
+  "prediction_timestamp_utc": "2026-08-17T11:45:00+00:00",
+  "model_version": "Jingcai 3.4",
+  "model_role": "PRODUCTION",
+  "source_snapshot_hash": "REPLACE_WITH_REAL_STAGE3_SNAPSHOT_HASH",
+  "input_integrity_state": "VERIFIED",
+  "had_probabilities": {"H": 0.52, "D": 0.28, "A": 0.20},
+  "had_pick": "H",
+  "HHAD": {"status": "EXAMPLE_ONLY"},
+  "TTG": {"status": "EXAMPLE_ONLY"},
+  "CRS": {"status": "EXAMPLE_ONLY"},
+  "HAFU": {"status": "EXAMPLE_ONLY"},
+  "rating": "A1",
+  "gates": ["STANDINGS_SOFT_CONFIRM"],
+  "staking": {"action": "EXAMPLE_ONLY"}
+}

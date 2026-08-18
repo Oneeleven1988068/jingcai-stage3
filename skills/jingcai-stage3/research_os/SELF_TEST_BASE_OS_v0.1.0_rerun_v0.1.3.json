@@ -1,0 +1,43 @@
+{
+  "self_test": "PASS",
+  "append_only_enforced": true,
+  "score": {
+    "n": 1,
+    "brier_3way": 0.38,
+    "logloss": 0.6931471805599453,
+    "had_hit_rate": 1.0,
+    "S_n": 0,
+    "S_hit_rate": null,
+    "S_error_rate": null,
+    "A1_n": 1,
+    "A1_hit_rate": 1.0,
+    "A1_error_rate": 0.0
+  },
+  "audit": {
+    "research_os_version": "0.1.0-alpha",
+    "db": "/tmp/tmp34k2mk87/test.db",
+    "tables": {
+      "research_evidence": 1,
+      "research_experiment": 1,
+      "research_experiment_event": 1,
+      "research_failure": 0,
+      "research_meta": 5,
+      "research_metric_snapshot": 0,
+      "research_outcome_event": 1,
+      "research_prediction_freeze": 1,
+      "research_promotion_event": 0,
+      "research_provenance_edge": 0
+    },
+    "prediction_integrity": {
+      "total": 1,
+      "unverified_or_incomplete": 0,
+      "post_kickoff": 0
+    },
+    "evidence_states": {
+      "OBSERVED": 1
+    },
+    "production_boundary": "Jingcai 3.4 remains staking baseline; Research OS install grants no 3.5 promotion",
+    "audit_status": "PASS"
+  },
+  "experiment_id": "exp_5d08dd27b49f465f8012"
+}

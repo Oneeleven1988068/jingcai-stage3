@@ -1,0 +1,52 @@
+[
+  {
+    "file": "Jingcai_3.5_Alpha_Stage3_DataLayer_v1.2.zip",
+    "size_bytes": 127448,
+    "sha256": "59c2f048c183cfb754c5033967c902d87c67b131cffd92b174203d1a35a3e0b4"
+  },
+  {
+    "file": "Jingcai_Stage3_ExternalMarket_v1.zip",
+    "size_bytes": 19588,
+    "sha256": "94ba3bf97347c222cd2d787639e708ac4f42bd4ac925b2b72aeee9801697c989"
+  },
+  {
+    "file": "Jingcai_Stage3_ParserBuilder_v1.zip",
+    "size_bytes": 105117,
+    "sha256": "b9f1c071d4fe798bc1e323dd0795f12a0bb2247227cc7145a03bbdc5452ba730"
+  },
+  {
+    "file": "Jingcai_RealityFirst_ResearchOS_v0.1.1_001_patch_2026-08-18.zip",
+    "size_bytes": 26919,
+    "sha256": "9ac55fc92e227aa92d6d7a9de5a90de5792eb59a92c99282a4685e2ea3d1be89"
+  },
+  {
+    "file": "Jingcai_RealityFirst_ResearchOS_v0.1.2_FullDistribution_2026-08-18.zip",
+    "size_bytes": 90069,
+    "sha256": "d98a6190991f2d78068ff942c250f582d4f78601000a33f107a3233d3c9881dd"
+  },
+  {
+    "file": "Jingcai_RealityFirst_ResearchOS_v0.1.3_FinalCompression_2026-08-18.zip",
+    "size_bytes": 74045,
+    "sha256": "3654a4debf09780199371703e930bd804e6aae276bcd77336ceef1c528c5a2d8"
+  },
+  {
+    "file": "Jingcai_RealityFirst_ResearchOS_v0.1.4_CRS_TwoSidedPresentation_2026-08-18.zip",
+    "size_bytes": 119370,
+    "sha256": "80373f3d79166effbe23164b8f9dbd57058bab1e273ecfac7018fd7bc1423734"
+  },
+  {
+    "file": "Jingcai_RealityFirst_ResearchOS_v0.1.5_HybridCRSSatellite_2026-08-18.zip",
+    "size_bytes": 106465,
+    "sha256": "ddb849ca65bb68d3a1e2a407a76efe31bb666d7e897e6dd311f136fc132ceaaf"
+  },
+  {
+    "file": "Jingcai_Stage3_Governance_Snapshot_2026-08-17.json",
+    "size_bytes": 5713,
+    "sha256": "bb261d1f60f7d99432087bbf4305545e40da8fc98d3421e07822a9374a504768"
+  },
+  {
+    "file": "Jingcai_Unified_Governance_ResearchOS_2026-08-17.json",
+    "size_bytes": 10037,
+    "sha256": "9e1253e9c4a34fbe4b5f61fda41be1d493f54b59c30056e113d37bfd1e64a4a6"
+  }
+]

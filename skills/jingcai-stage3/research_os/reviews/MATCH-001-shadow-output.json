@@ -1,0 +1,97 @@
+{
+  "module": "Market Structure Shadow v0.1",
+  "status": "SHADOW_ONLY__NO_MODEL_PROMOTION",
+  "match_num": "周一001",
+  "match_id": 2040914,
+  "fixture": "赫尔辛基火花 vs 坦佩雷山猫",
+  "evidence_state": "DERIVED",
+  "had": {
+    "odds": {
+      "H": 2.5,
+      "D": 3.35,
+      "A": 2.32
+    },
+    "dejuiced": {
+      "H": 0.35412584863534885,
+      "D": 0.26427302136966324,
+      "A": 0.38160112999498796
+    },
+    "update_time_local": "2026-08-17T19:13:15+08:00"
+  },
+  "hhad": {
+    "goal_line": "-1",
+    "odds": {
+      "H": 5.15,
+      "D": 4.75,
+      "A": 1.38
+    },
+    "dejuiced": {
+      "H": 0.1719366811368018,
+      "D": 0.18641555954832192,
+      "A": 0.6416477593148764
+    },
+    "update_time_local": "2026-08-17T19:13:19+08:00"
+  },
+  "hhad_margin_decomposition": {
+    "interpretation": {
+      "H": "home wins by 2+",
+      "D": "home wins by exactly 1",
+      "A": "home draw or loss"
+    },
+    "p_home_win_by_2plus": 0.1719366811368018,
+    "p_home_win_exactly_1": 0.18641555954832192,
+    "p_home_draw_or_loss": 0.6416477593148764,
+    "p_home_win_partition": 0.3583522406851237,
+    "had_home_win": 0.35412584863534885,
+    "cross_market_coherence_gap_pp": 0.4226392049774874,
+    "conditional_on_home_win": {
+      "exactly_1": 0.5202020202020201,
+      "2plus": 0.47979797979797983
+    },
+    "research_status": "HYPOTHESIS__OOS_VALIDATION_REQUIRED"
+  },
+  "ttg": {
+    "odds": {
+      "0": 20.0,
+      "1": 7.35,
+      "2": 4.15,
+      "3": 3.5,
+      "4": 4.5,
+      "5": 7.3,
+      "6": 13.0,
+      "7": 18.0
+    },
+    "dejuiced": {
+      "0": 0.041513767345602005,
+      "1": 0.11296263223293063,
+      "2": 0.2000663486535036,
+      "3": 0.23722152768915428,
+      "4": 0.18450563264712,
+      "5": 0.11373634889206027,
+      "6": 0.06386733437784924,
+      "7": 0.04612640816178
+    },
+    "mode": 3,
+    "mode_probability": 0.23722152768915428,
+    "tail_mass_4plus": 0.4082357240788095,
+    "tail_mass_5plus": 0.2237300914316895,
+    "update_time_local": "2026-08-17T19:16:39+08:00",
+    "research_status": "DERIVED_DIAGNOSTIC"
+  },
+  "sales_cutoff": {
+    "business_date": "2026-08-17",
+    "cutoff_local": "2026-08-17T22:00:00+08:00",
+    "rule_source": "USER_CONFIRMED_GOVERNANCE"
+  },
+  "closing_quote": {
+    "price": {
+      "H": 2.5,
+      "D": 3.35,
+      "A": 2.32
+    },
+    "last_official_update_time_local": "2026-08-17T19:13:15+08:00",
+    "effective_through_cutoff_local": "2026-08-17T22:00:00+08:00",
+    "confirmation": "USER_OBSERVED_UNCHANGED_TO_CUTOFF",
+    "important_caveat": "Not an independently archived official 22:00 snapshot; provenance is user observation + last official quote."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_name": "Standings Gate v0.1 OOS falsification",
+  "module_name": "League Context / Standings Layer",
+  "module_version": "0.1-shadow",
+  "hypothesis": "Standings conflict gating reduces S/A1 high-confidence errors without degrading probability quality or materially reducing useful coverage.",
+  "baseline_id": "Jingcai 3.4 production baseline",
+  "data_cutoff_utc": "2026-08-17T00:00:00+00:00",
+  "train_window": {"mode": "walk-forward"},
+  "oos_window": {"mode": "future-only"},
+  "primary_metrics": ["S_error_rate", "A1_error_rate", "Brier", "LogLoss"],
+  "success_criteria": {
+    "required": "pre-registered quantitative thresholds must be filled before real evaluation",
+    "no_single_night_promotion": true
+  },
+  "failure_criteria": {
+    "reject_or_redesign_if": "no robust OOS improvement, unstable by league/season stage, or complexity cost exceeds benefit"
+  },
+  "falsification_contract": {
+    "can_be_falsified_by": [
+      "S/A1 error rate not reduced in strict OOS",
+      "probability proper scores worsen materially",
+      "benefit disappears across folds/leagues",
+      "effect depends on post-kickoff or post-match data"
+    ]
+  },
+  "search_space": {"note": "record every attempted threshold/configuration"},
+  "attempted_config_index": 1
+}
