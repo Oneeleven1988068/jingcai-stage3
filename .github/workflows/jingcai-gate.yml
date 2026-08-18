@@ -1,0 +1,90 @@
+name: Jingcai Governance Gate
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - research/3.5-alpha
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jingcai-gate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  governance-gate:
+    name: Jingcai governance gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile canonical skill
+        run: python -m compileall -q skills/jingcai-stage3
+
+      - name: Validate canonical skill and governance markers
+        run: python skills/jingcai-stage3/runtime/validate_skill.py
+
+      - name: Full-distribution shadow self-test
+        run: python skills/jingcai-stage3/research_os/shadow_modules/full_distribution_tail_aware_shadow_v0_2.py self-test
+
+      - name: Final-compression shadow self-test
+        run: python skills/jingcai-stage3/research_os/shadow_modules/final_compression_bet_construction_shadow_v0_1.py self-test
+
+      - name: CRS two-sided presentation self-test
+        run: python skills/jingcai-stage3/research_os/shadow_modules/crs_two_sided_presentation_shadow_v0_1.py self-test
+
+      - name: Hybrid CRS satellite self-test
+        run: python skills/jingcai-stage3/research_os/shadow_modules/hybrid_crs_satellite_shadow_v0_1.py self-test
+
+      - name: Assert production boundary
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("skills/jingcai-stage3")
+          status = json.loads(
+              (root / "research_os/STATUS_v0.1.5.json").read_text(encoding="utf-8")
+          )
+
+          expected = {
+              "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
+              "staking_baseline": "Jingcai 3.4",
+              "research_candidate": "Jingcai 3.5 Alpha",
+              "production_probability_change": False,
+              "rating_threshold_change": False,
+              "staking_change": False,
+              "silent_promotion_forbidden": True,
+          }
+
+          failures = {
+              key: {"expected": value, "actual": status.get(key)}
+              for key, value in expected.items()
+              if status.get(key) != value
+          }
+
+          if failures:
+              raise SystemExit(
+                  "Production boundary violation: "
+                  + json.dumps(failures, ensure_ascii=False)
+              )
+
+          print(
+              "PASS: Jingcai 3.4 remains staking baseline; "
+              "Jingcai 3.5 Alpha remains research/shadow only."
+          )
+          PY
