@@ -1,17 +1,20 @@
-# Jingcai Stage3 Canonical Skill v1.0.0
+# Jingcai Stage3 Canonical Skill v1.0.1
 
-This bundle consolidates the currently available Stage3 code, governance, and Reality-First Research OS into one Skill-oriented package.
+Canonical orchestration bundle for Jingcai Stage3.
 
-Start with `SKILL.md`.
+## Governance
 
-Validation:
-```bash
-python runtime/validate_skill.py
-```
+- Production baseline: **Jingcai 3.4**
+- Research / Shadow: **Jingcai 3.5 Alpha**
+- Research OS: **v0.1.6-alpha**
+- Model promotion: **NOT GRANTED**
 
-External target coverage audit example:
-```bash
-python runtime/external_coverage_gate.py examples/targets_001_004.example.json /path/to/theodds_stage3.json
-```
+## v1.0.1 additions
 
-Important: this package consolidates orchestration and verified source assets. It does not grant 3.5 Alpha production promotion or freeze new rating thresholds.
+- Draw Branch Preservation Gate (shadow audit)
+- Confirmation Provenance Gate (same-source overcount audit)
+- EXP-010 / EXP-011
+- 2026-08-18 Tue001–004 postmortem
+- Tue003 Failure Graveyard record
+
+Main entry: `SKILL.md`.

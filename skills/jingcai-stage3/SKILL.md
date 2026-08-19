@@ -1,4 +1,4 @@
-# Jingcai Stage3 Canonical Skill v1.0.0
+# Jingcai Stage3 Canonical Skill v1.0.1
 
 ## Identity
 This Skill is the canonical orchestration layer for the Jingcai Stage3 football research and live-analysis system.
@@ -81,10 +81,12 @@ For live Sporttery analysis execute in this order:
 13. Context gates: standings, form, fatigue, motivation, injuries, venue, competition state
 14. Three-Way Directional Reversal Gate
 15. Favorite Crowding / Popular-Side Distortion Gate
-16. Final Compression / Bet Construction Gate
-17. Rating: S / A1 / A2 / B / C
-18. `SPORTTERY_SALES_CUTOFF_GATE` re-check before staking permission
-19. Prediction Freeze Ledger
+16. Confirmation Provenance Gate
+17. Draw Branch Preservation Gate
+18. Final Compression / Bet Construction Gate
+19. Rating: S / A1 / A2 / B / C
+20. `SPORTTERY_SALES_CUTOFF_GATE` re-check before staking permission
+21. Prediction Freeze Ledger
 
 Do not skip a gate because a conclusion already “looks clear.”
 
@@ -299,7 +301,38 @@ Without real volume/funding distribution, crowding is a hypothesis only.
 
 ---
 
-## 12. Rating semantics
+## 12. Confirmation provenance and draw-branch preservation
+### Confirmation Provenance Gate
+HAD / HHAD / TTG / CRS / HAFU from the same Sporttery source are **same-source structural consistency**, not five independent confirmations.
+
+Mandatory labels:
+- `SAME_SOURCE_STRUCTURAL_CONSISTENCY`
+- `INDEPENDENT_CONFIRMATION`
+- `EXTERNAL_PRICE_CONFIRM`
+- `EXTERNAL_CONTEXT_CONFIRM`
+
+Independent confirmation must be counted at the source-family level with provenance preserved. A five-pool Sporttery alignment can be structurally useful while still representing only one source family.
+
+### Draw Branch Preservation Gate
+Before final compression, audit whether any H/D/A branch that survives upstream state-space analysis is silently extinguished.
+
+For the draw branch, record:
+- HAD draw probability/rank
+- CRS aggregate draw probability/rank
+- draw exact states in the diagnostic candidate layer
+- TTG support for the totals corresponding to those draw states
+- observed draw-market movement, if available
+- final retained vs dropped draw states
+
+If a draw exact state is already present in the diagnostic candidate layer but the final shortlist removes all draw states, emit `DRAW_BRANCH_EXTINCTION` and request `PRESERVE_AT_LEAST_ONE_DRAW_STATE_FOR_SHADOW_REVIEW`.
+
+This is **shadow-only**. It does not automatically add a selection, change rating, alter stake, or modify production probabilities. No draw threshold is frozen from a single result set.
+
+The 2026-08-18 Tue003 failure is the reference audit case: the realized `2:2` state was visible pre-compression but the final CRS satellite retained only home-win tail scores. The lesson is final-compression information loss, not post-hoc proof of a profitable draw rule.
+
+---
+
+## 13. Rating semantics
 - **S**: highest-confirmation opportunity. Not granted by low odds alone.
 - **A1**: core accumulator anchor.
 - **A2**: direction playable with meaningful risk; protection/single/combination only, not core banker.
@@ -312,7 +345,7 @@ No new numeric S/A1/A2 thresholds may be treated as frozen until explicit OOS pr
 
 ---
 
-## 13. Prediction freeze and postmortem
+## 14. Prediction freeze and postmortem
 Before sale cutoff, freeze:
 - timestamp
 - source timestamps
@@ -332,7 +365,7 @@ After result:
 
 ---
 
-## 14. Default live output
+## 15. Default live output
 Use concise Chinese output. Default table fields:
 - 比赛编号
 - 开赛时间
@@ -355,7 +388,7 @@ Do not expose internal model mechanics in public/XHS output.
 
 ---
 
-## 15. R9 optional mode
+## 16. R9 optional mode
 R9 is a separate consumer mode, not evidence that a match is production-grade in the 5-pool model.
 
 Principles:
@@ -367,10 +400,10 @@ Principles:
 
 ---
 
-## 16. Component registry
+## 17. Component registry
 Canonical code and research assets live in:
 - `core/` — Stage3 data layer, 3.4 baseline code, 3.5 Alpha code, parser/builder, external market bridge/collector
-- `research_os/` — Reality-First Research OS through v0.1.5, including v0.1.1–v0.1.5 inherited experiments/modules
+- `research_os/` — Reality-First Research OS through v0.1.6, including v0.1.1–v0.1.6 inherited experiments/modules
 - `governance/` — frozen governance snapshots
 - `runtime/` — Skill-level gates/orchestration helpers
 - `policies/` — canonical policies that override lower-level convenience behavior

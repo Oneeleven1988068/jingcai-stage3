@@ -1,0 +1,36 @@
+{
+  "failure_id": "FAIL-20260818-TUE003-DRAW-BRANCH-EXTINCTION",
+  "match_ref": "周二003_20260818",
+  "severity": "MAJOR",
+  "failure_type": "HIGH_CONFIDENCE_WRONG_DIRECTION__FINAL_COMPRESSION_INFORMATION_LOSS",
+  "detected_at_local": "2026-08-19T10:29:00+08:00",
+  "observed_result": "2:2",
+  "frozen_rating": "A2_STRONG",
+  "frozen_primary_direction": "H",
+  "input_truth_check": "NO_INPUT_FABRICATION_IDENTIFIED_IN_THIS_POSTMORTEM_RECORD",
+  "time_leakage_check": "NO_POST_MATCH_DATA_ALLOWED_IN_PRE_MATCH_FREEZE",
+  "promotion_layer": "FINAL_COMPRESSION_AND_CONFIDENCE_LANGUAGE",
+  "missed_gate": "DRAW_BRANCH_PRESERVATION_GATE_NOT_YET_IMPLEMENTED",
+  "root_cause_class": [
+    "FINAL_COMPRESSION_DIRECTIONAL_BIAS",
+    "DRAW_BRANCH_EXTINCTION",
+    "SAME_SOURCE_STRUCTURAL_CONSISTENCY_OVERCOUNT_RISK"
+  ],
+  "historical_recurrence": "UNVERIFIED__REQUIRES_OOS_SEARCH",
+  "candidate_prevention_rule": "EXP-010_DRAW_BRANCH_PRESERVATION__SHADOW_ONLY",
+  "oos_generalization_required": true,
+  "narrative": {
+    "what_was_visible_pre_match": [
+      "2:2 existed in pre-compression CRS space",
+      "TTG retained meaningful 4+ mass",
+      "late CRS audit showed broader tail mass rather than home-tail-only confirmation"
+    ],
+    "what_final_compression_did": "Retained only home-win tail scores 3:1 / 3:2 / 4:1 and removed the draw branch from the final CRS satellite.",
+    "why_this_matters": "The realized state was visible upstream but was deleted during final presentation/compression.",
+    "what_is_not_claimed": [
+      "This single match does not prove a new profitable rule.",
+      "No production weight is changed.",
+      "No threshold is frozen from this outcome."
+    ]
+  }
+}

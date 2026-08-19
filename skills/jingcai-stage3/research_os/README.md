@@ -1,13 +1,12 @@
-# Jingcai Reality-First Research OS — v0.1.5-alpha package
+# Jingcai Reality-First Research OS
 
-Current patch: **HYBRID_CRS_SATELLITE_BET_CONSTRUCTION**
+Current canonical research version: **v0.1.6-alpha**.
 
-Production boundary remains unchanged:
+Current patch: **Draw Branch Preservation + Confirmation Provenance**.
 
-- Jingcai 3.4 = real-money / staking baseline
-- Jingcai 3.5 Alpha = shadow / research
-- `RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED`
+- Production/staking baseline remains **Jingcai 3.4**.
+- Jingcai 3.5 Alpha remains **shadow / research**.
+- `MODEL_PROMOTION_NOT_GRANTED`.
+- Current experiments: `EXP-001` through `EXP-011`.
 
-Read `README_v0.1.5.md`, `PATCH_NOTES_v0.1.5.md`, and `reviews/HYBRID_CRS_SATELLITE_POLICY.md` for the new construction rules.
-
-The base control-plane executable remains the historical `jingcai_research_os_v0_1.py`; its internal version identity is intentionally not rewritten by shadow patches.
+See `README_v0.1.6.md`, `PATCH_NOTES_v0.1.6.md`, and `STATUS_v0.1.6.json` for the latest research-layer changes.

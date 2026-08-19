@@ -1,0 +1,9 @@
+{
+  "self_test": "PASS",
+  "version": "Draw Branch Preservation / Final Compression Audit Shadow v0.1",
+  "draw_branch_extinction_detected": true,
+  "draw_state_preservation_review_triggered": true,
+  "no_automatic_bet_change": true,
+  "thresholds_frozen": false,
+  "production_promotion": false
+}

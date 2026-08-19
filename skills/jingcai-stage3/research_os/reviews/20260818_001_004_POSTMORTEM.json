@@ -1,0 +1,70 @@
+{
+  "review_id": "POSTMORTEM-20260818-TUE-001-004",
+  "reviewed_at_local": "2026-08-19T10:29:00+08:00",
+  "governance": "REALITY_FIRST",
+  "prediction_source": "PRE_MATCH_FROZEN_DECISION_RECAP_FROM_2026-08-18_SESSION",
+  "outcome_source": "USER_PROVIDED_RESULT_SCREENSHOT_2026-08-19",
+  "evidence_boundary": "This review records the frozen decision labels and observed results. It does not reconstruct missing raw market snapshots inside this file.",
+  "matches": [
+    {
+      "match_ref": "周二001_20260818",
+      "teams": "里独立 vs 弗鲁米嫩塞",
+      "frozen_rating": "A2",
+      "frozen_direction": "H/D",
+      "frozen_primary_score": "1:1",
+      "observed_score": "1:1",
+      "observed_result": "D",
+      "audit_labels": ["CRS_EXACT_SUCCESS", "DRAW_PRESERVATION_SUCCESS", "PRIMARY_SINGLE_DIRECTION_NOT_HIT"]
+    },
+    {
+      "match_ref": "周二002_20260818",
+      "teams": "索列夫 vs 雅典AEK",
+      "frozen_rating": "B",
+      "frozen_direction": "A/D__SKIP",
+      "frozen_score_set_included": ["1:1", "0:1", "1:2", "1:0", "0:0"],
+      "observed_score": "0:0",
+      "observed_result": "D",
+      "audit_labels": ["RISK_GATE_SUCCESS", "PRIMARY_DIRECTION_FAILURE", "CRS_REALIZED_STATE_RETAINED"]
+    },
+    {
+      "match_ref": "周二003_20260818",
+      "teams": "萨迪纳摩 vs 维京",
+      "frozen_rating": "A2_STRONG",
+      "frozen_direction": "H",
+      "frozen_center_score": "2:1",
+      "precompression_draw_state_present": "2:2",
+      "final_crs_satellite": ["3:1", "3:2", "4:1"],
+      "observed_score": "2:2",
+      "observed_result": "D",
+      "audit_labels": [
+        "A2_STRONG_DIRECTION_FAIL",
+        "FINAL_COMPRESSION_DRAW_TAIL_DROP",
+        "DRAW_BRANCH_EXTINCTION",
+        "SAME_SOURCE_CONFIRMATION_OVERCOUNT_RISK"
+      ]
+    },
+    {
+      "match_ref": "周二004_20260818",
+      "teams": "费内巴切 vs 里昂",
+      "frozen_rating": "B_PLUS",
+      "frozen_direction": "H/D__SKIP",
+      "frozen_primary_score": "1:1",
+      "observed_score": "1:1",
+      "observed_result": "D",
+      "audit_labels": ["CRS_EXACT_SUCCESS", "SKIP_SUCCESS", "LATE_FAVORITE_REBOUND_NONPREDICTIVE_SAMPLE"]
+    }
+  ],
+  "aggregate_observation": {
+    "observed_draws": "4/4",
+    "single_primary_HAD_direction_hits": "0/4",
+    "exact_primary_CRS_hits": "2/4",
+    "realized_score_state_present_in_pre_match_CRS_space": "4/4 per frozen recap",
+    "ttg_realized_band_supported": "4/4 per frozen recap"
+  },
+  "research_action": [
+    "Register EXP-010 Draw Branch Preservation",
+    "Register EXP-011 Confirmation Provenance",
+    "Do not change Jingcai 3.4 production probabilities or staking",
+    "Require OOS matched-cost validation before any promotion"
+  ]
+}
