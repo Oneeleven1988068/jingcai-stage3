@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-011-CONFIRMATION-PROVENANCE",
+  "status": "SHADOW_GOVERNANCE",
+  "question": "Does source-family-level confirmation accounting improve calibration and reduce overconfidence versus counting correlated Sporttery pools as independent confirmations?",
+  "hypothesis": "Collapsing HAD/HHAD/TTG/CRS/HAFU into one Sporttery source family for independence counting will reduce confidence inflation while preserving structural-consistency diagnostics.",
+  "comparison_arms": [
+    "A: raw confirmation count by pool",
+    "B: source-family confirmation count with structural-consistency labels"
+  ],
+  "primary_metrics": [
+    "ECE",
+    "Brier score by confidence bucket",
+    "S/A1/A2 high-confidence error rate",
+    "promotion frequency",
+    "coverage rate"
+  ],
+  "falsification_contract": {
+    "reject_or_keep_shadow_if": [
+      "Source-family accounting does not reduce overconfidence or high-confidence misses.",
+      "Calibration worsens materially without compensating decision-quality benefit.",
+      "The provenance grouping cannot be reproduced from raw source metadata.",
+      "External context reports are incorrectly treated as reproducible multi-book price confirmation."
+    ]
+  },
+  "production_change": false,
+  "staking_change": false,
+  "thresholds_frozen": false,
+  "promotion": "NOT_GRANTED"
+}

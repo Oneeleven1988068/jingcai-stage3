@@ -1,0 +1,39 @@
+{
+  "experiment_id": "EXP-010-DRAW-BRANCH-PRESERVATION",
+  "status": "SHADOW",
+  "question": "Does preventing silent draw-branch extinction during final compression reduce high-confidence direction misses at matched ticket cost?",
+  "hypothesis": "When a draw state remains visible in the pre-compression CRS candidate layer and is supported by the corresponding TTG total, preserving at least one draw state for review can reduce final-compression information loss.",
+  "baseline": "Existing final-compression output without a draw-preservation review request",
+  "treatment": "Draw Branch Preservation Gate v0.1 shadow review",
+  "primary_metrics": [
+    "high-confidence wrong-direction rate",
+    "CRS realized-state retention rate",
+    "matched-cost ROI",
+    "max drawdown",
+    "ticket expansion cost",
+    "Brier/LogLoss/RPS unchanged at probability-core level"
+  ],
+  "mandatory_freeze_fields": [
+    "pre-compression HAD H/D/A",
+    "full CRS exact-score distribution",
+    "full TTG distribution",
+    "diagnostic Top-K setting",
+    "final retained selections",
+    "retained/dropped result branches",
+    "freeze timestamp"
+  ],
+  "falsification_contract": {
+    "reject_or_keep_shadow_if": [
+      "The gate only increases selection count/cost without reducing high-confidence misses.",
+      "Any apparent improvement disappears after matched-cost comparison.",
+      "The effect is confined to a single short window or league.",
+      "The gate is tuned after outcomes using unfrozen thresholds.",
+      "The retained draw branch is chosen post-hoc rather than from pre-match frozen states.",
+      "ROI improvement comes with materially worse drawdown outside preregistered tolerance."
+    ]
+  },
+  "production_change": false,
+  "staking_change": false,
+  "thresholds_frozen": false,
+  "promotion": "NOT_GRANTED"
+}

@@ -1,0 +1,25 @@
+{
+  "self_test": "PASS",
+  "version": "Jingcai Reality-First Research OS v0.1.6-alpha",
+  "draw_branch_preservation": {
+    "self_test": "PASS",
+    "version": "Draw Branch Preservation / Final Compression Audit Shadow v0.1",
+    "draw_branch_extinction_detected": true,
+    "draw_state_preservation_review_triggered": true,
+    "no_automatic_bet_change": true,
+    "thresholds_frozen": false,
+    "production_promotion": false
+  },
+  "confirmation_provenance": {
+    "self_test": "PASS",
+    "version": "Confirmation Provenance / Same-Source Overcount Audit Shadow v0.1",
+    "same_source_five_pool_collapsed_to_one_family": true,
+    "independent_confirmation_counting": "SOURCE_FAMILY_LEVEL",
+    "production_promotion": false
+  },
+  "production_probability_change": false,
+  "rating_threshold_change": false,
+  "staking_change": false,
+  "thresholds_frozen": false,
+  "promotion": "NOT_GRANTED"
+}

@@ -13,11 +13,13 @@
 - `core/jingcai_stage3_external_market_v1.py`
 - `core/external_odds_collector_theoddsapi.py`
 
-## Reality-First Research OS inherited through v0.1.5
+## Reality-First Research OS inherited through v0.1.6
 - market structure / reversal
 - full TTG distribution / tail-aware CRS
 - final compression / bet construction
 - CRS two-sided presentation
 - hybrid CRS satellite
+- draw branch preservation / final-compression branch-extinction audit
+- confirmation provenance / same-source overcount audit
 
-The v0.1.5 package contains inherited experiment records EXP-001 through EXP-009 and their self-test/audit assets.
+The v0.1.6 package contains inherited experiment records EXP-001 through EXP-011 and their self-test/audit assets.

@@ -1,13 +1,15 @@
 {
   "skill": "Jingcai Stage3 Canonical Skill",
-  "version": "1.0.0",
-  "build_date": "2026-08-18",
+  "version": "1.0.1",
+  "build_date": "2026-08-19",
   "governance": "RESEARCH_OS_ACTIVE__MODEL_PROMOTION_NOT_GRANTED",
   "staking_baseline": "Jingcai 3.4",
   "research_candidate": "Jingcai 3.5 Alpha",
-  "research_os": "0.1.5-alpha",
-  "included_research_experiments": "EXP-001..EXP-009",
+  "research_os": "0.1.6-alpha",
+  "included_research_experiments": "EXP-001..EXP-011",
   "external_coverage_gate": "MANDATORY",
   "browser_fallback_on_external_gap": "MANDATORY_WHEN_AVAILABLE",
+  "draw_branch_preservation_gate": "SHADOW_MANDATORY_AUDIT",
+  "confirmation_provenance_gate": "SHADOW_MANDATORY_AUDIT",
   "self_test": "PASS"
 }

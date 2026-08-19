@@ -1,16 +1,22 @@
 {
   "skill": "Jingcai Stage3 Canonical Skill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "status": "PASS",
   "checks": {
     "required_files": true,
-    "research_os_v0_1_5_self_test": true,
+    "research_os_v0_1_6_self_test": true,
+    "skill_version": true,
+    "research_os_version": true,
     "production_boundary_present": true,
     "promotion_not_granted_present": true,
     "external_coverage_gate_present": true,
     "browser_fallback_present": true,
     "sales_cutoff_present": true,
-    "full_distribution_present": true
+    "full_distribution_present": true,
+    "draw_branch_preservation_present": true,
+    "confirmation_provenance_present": true,
+    "same_source_rule_present": true,
+    "no_auto_draw_promotion": true
   },
   "missing": []
 }

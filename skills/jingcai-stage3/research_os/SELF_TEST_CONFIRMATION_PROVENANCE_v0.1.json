@@ -1,0 +1,7 @@
+{
+  "self_test": "PASS",
+  "version": "Confirmation Provenance / Same-Source Overcount Audit Shadow v0.1",
+  "same_source_five_pool_collapsed_to_one_family": true,
+  "independent_confirmation_counting": "SOURCE_FAMILY_LEVEL",
+  "production_promotion": false
+}
