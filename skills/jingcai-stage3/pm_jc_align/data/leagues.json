@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "maps": [
+    {"jc_keys": ["英超", "英格兰超级联赛", "英格兰超"], "pm_sport": "epl", "series_id": "10188", "tag_id": 306, "ordering": "home", "label": "Premier League"},
+    {"jc_keys": ["西甲", "西班牙甲级联赛", "西班牙甲"], "pm_sport": "lal", "series_id": "10193", "tag_id": 780, "ordering": "home", "label": "LaLiga"},
+    {"jc_keys": ["意甲", "意大利甲级联赛", "意大利甲"], "pm_sport": "sea", "series_id": "10203", "tag_id": 100618, "ordering": "home", "label": "Serie A"},
+    {"jc_keys": ["德甲", "德国甲级联赛", "德国甲"], "pm_sport": "bun", "series_id": "10194", "tag_id": 1494, "ordering": "home", "label": "Bundesliga"},
+    {"jc_keys": ["法甲", "法国甲级联赛", "法国甲"], "pm_sport": "fl1", "series_id": "10195", "tag_id": 102070, "ordering": "home", "label": "Ligue 1"},
+    {"jc_keys": ["欧冠", "欧洲冠军联赛", "冠军杯"], "pm_sport": "ucl", "series_id": "10204", "tag_id": 1234, "ordering": "home", "label": "UEFA Champions League"},
+    {"jc_keys": ["欧联", "欧洲联赛", "欧罗巴"], "pm_sport": "uel", "series_id": "10209", "tag_id": 101787, "ordering": "home", "label": "UEFA Europa League"}
+  ]
+}

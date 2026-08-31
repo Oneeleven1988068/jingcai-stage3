@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>竞彩 3.4 · Polymarket 共识对照</title>
+  <style>
+    :root { --ink:#0B0C0A; --paper:#ECEAE4; --sage:#7D9B8A; --brick:#B07060; --hair:#FFFFFF14; --mute:#8a8a82; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; background:var(--ink); color:var(--paper); font-family: Georgia, "Songti SC", serif; }
+    header { padding:22px 20px 12px; border-bottom:1px solid var(--hair); }
+    .kicker { letter-spacing:.18em; font-size:11px; color:var(--sage); text-transform:uppercase; }
+    h1 { font-size:22px; font-weight:500; margin:6px 0 0; }
+    .sub,.hint,.meta,.lab,.small { color:var(--mute); }
+    .bar { display:flex; flex-wrap:wrap; gap:8px; padding:12px 20px; }
+    button,.chip { background:transparent; color:var(--paper); border:1px solid var(--hair); border-radius:2px; padding:7px 12px; font-size:12px; }
+    .ok { color:var(--sage);} .bad,.neg { color:var(--brick);} .pos { color:var(--sage);}
+    main { padding:8px 20px 48px; max-width:980px; }
+    .card { border:1px solid var(--hair); padding:14px; margin-bottom:10px; }
+    .row { display:flex; justify-content:space-between; gap:12px; }
+    .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:12px; }
+    .cell { border-top:1px solid var(--hair); padding-top:8px; }
+    .num { font-size:20px; font-variant-numeric: tabular-nums; }
+    textarea { width:100%; min-height:90px; background:#111210; color:var(--paper); border:1px solid var(--hair); padding:10px; font-family:monospace; font-size:12px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="kicker">Jingcai 3.4 · StageHybrid shadow</div>
+  <h1>市场共识对照 · Polymarket</h1>
+  <div class="sub">只读 · HAD 去水偏差 · 无下单</div>
+</header>
+<div class="bar">
+  <button onclick="refresh()">刷新</button>
+  <button onclick="ingest()">写入竞彩 JSON</button>
+  <span class="chip" id="status">加载中</span>
+  <span class="chip" id="gate">GATE</span>
+</div>
+<main>
+  <p class="hint" id="note"></p>
+  <h2>已对齐</h2><div id="aligned"></div>
+  <h2>待核</h2><div id="pending"></div>
+  <h2>Polymarket 在售</h2><div id="pmonly"></div>
+  <h2>竞彩源</h2>
+  <textarea id="jcjson" placeholder='{"fixtures":[...]}'></textarea>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const pct = (x) => x == null || Number.isNaN(x) ? "—" : (x * 100).toFixed(1) + "%";
+const delta = (x) => x == null ? "—" : `<span class="${x>=0?"pos":"neg"}">${(x>=0?"+":"")+(x*100).toFixed(1)}pp</span>`;
+function hadCells(card){
+  const h=card.had||{}, jc=(h.jc_math&&h.jc_math.devig)||{}, pm=h.pm_mid_norm||{}, d=h.delta_mid||{};
+  return `<div class="grid3">${[["home","主"],["draw","平"],["away","客"]].map(([k,lab])=>`<div class="cell"><div class="lab">${lab}</div><div class="num">${delta(d[k])}</div><div class="small">JC ${pct(jc[k])} · PM ${pct(pm[k])}</div></div>`).join("")}</div>`;
+}
+function cardEl(card){
+  const jc=card.jc||{}, pm=card.pm||{}, m=card.match||{};
+  return `<article class="card"><div class="row"><div>${jc.home||pm.home} · ${jc.away||pm.away}</div><div class="meta">${m.status||""} ${m.verified?"VERIFIED":""}</div></div><div class="meta">${jc.league||pm.league_label||""} · conf ${m.confidence??"—"}</div>${hadCells(card)}</article>`;
+}
+function pmEl(ev){
+  const had=ev.had||{};
+  const cells=[["home","主"],["draw","平"],["away","客"]].map(([k,lab])=>`<div class="cell"><div class="lab">${lab}</div><div class="num">${pct((had[k]||{}).yes_mid)}</div></div>`).join("");
+  return `<article class="card"><div>${ev.title||""}</div><div class="meta">${ev.league_label||""} · ${ev.start_time||""}</div><div class="grid3">${cells}</div></article>`;
+}
+async function load(force){
+  $("status").textContent="拉取中";
+  const snap=await fetch(force?"/api/refresh":"/api/snapshot").then(r=>r.json());
+  $("status").textContent=`JC ${snap.jc_count} · PM ${snap.pm_count}`;
+  const g=snap.gate||{};
+  $("gate").textContent="GATE "+(g.EXTERNAL_COVERAGE_GATE||"—");
+  $("note").textContent=[snap.jc_source,snap.jc_error,g.note].filter(Boolean).join(" · ");
+  $("aligned").innerHTML=(snap.aligned||[]).map(cardEl).join("")||'<p class="hint">暂无对齐</p>';
+  $("pending").innerHTML=(snap.pending||[]).map(cardEl).join("")||'<p class="hint">无待核</p>';
+  $("pmonly").innerHTML=(snap.pm_only||[]).slice(0,24).map(pmEl).join("");
+}
+async function refresh(){ await load(true); }
+async function ingest(){
+  const raw=$("jcjson").value.trim(); if(!raw) return alert("先粘贴 JSON");
+  await fetch("/api/ingest-jc",{method:"POST",headers:{"Content-Type":"application/json"},body:raw});
+  await load(true);
+}
+load(false).catch(err=>{$("status").textContent="失败 "+err;});
+</script>
+</body></html>
