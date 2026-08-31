@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "aliases": {
+    "arsenal": ["阿森纳", "arsenal", "arsenal fc"],
+    "aston villa": ["阿斯顿维拉", "维拉", "aston villa", "aston villa fc"],
+    "chelsea": ["切尔西", "chelsea"],
+    "liverpool": ["利物浦", "liverpool"],
+    "manchester city": ["曼城", "manchester city", "man city"],
+    "manchester united": ["曼联", "manchester united", "man united"],
+    "tottenham": ["热刺", "tottenham", "spurs"],
+    "newcastle": ["纽卡", "newcastle"],
+    "brighton": ["布莱顿", "brighton"],
+    "west ham": ["西汉姆", "west ham"],
+    "everton": ["埃弗顿", "everton"],
+    "fulham": ["富勒姆", "fulham"],
+    "brentford": ["布伦特福德", "brentford"],
+    "crystal palace": ["水晶宫", "crystal palace"],
+    "wolves": ["狼队", "wolves"],
+    "nottingham forest": ["诺丁汉", "nottingham forest"],
+    "bournemouth": ["伯恩茅斯", "bournemouth"],
+    "real madrid": ["皇马", "real madrid"],
+    "barcelona": ["巴萨", "barcelona"],
+    "atletico madrid": ["马竞", "atletico madrid"],
+    "juventus": ["尤文", "juventus"],
+    "inter": ["国米", "inter", "inter milan"],
+    "ac milan": ["米兰", "ac milan"],
+    "napoli": ["那不勒斯", "napoli"],
+    "bayern munich": ["拜仁", "bayern", "bayern munich"],
+    "borussia dortmund": ["多特", "dortmund"],
+    "psg": ["巴黎", "psg", "paris saint-germain"]
+  }
+}
